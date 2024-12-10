@@ -1,5 +1,7 @@
 package com.danders.moreores;
 
+import com.danders.moreores.block.ModBlocks;
+import com.danders.moreores.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -50,6 +52,9 @@ public class MoreOres
 
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -65,7 +70,15 @@ public class MoreOres
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.RAW_LUMEN);
+            event.accept(ModItems.RAW_INFERNIUM);
+        }
 
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.LUMEN_ORE);
+            event.accept(ModBlocks.INFERNIUM_ORE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
