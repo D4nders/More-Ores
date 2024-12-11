@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "infernium",
+  "ingredient": {
+    "item": "moreores:infernium_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "moreores:infernium_ingot"
+  }
+}

@@ -73,6 +73,8 @@ public class MoreOres
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_LUMEN);
             event.accept(ModItems.RAW_INFERNIUM);
+            event.accept(ModItems.LUMEN_INGOT);
+            event.accept(ModItems.INFERNIUM_INGOT);
         }
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {

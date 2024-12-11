@@ -1,6 +1,8 @@
 {
   "item.moreores.raw_lumen": "Raw Lumen",
   "item.moreores.raw_infernium": "Raw Infernium",
+  "item.moreores.lumen_ingot": "Lumen Ingot",
+  "item.moreores.infernium_ingot": "Infernium Ingot",
 
   "block.moreores.lumen_ore": "Lumen Ore",
   "block.moreores.infernium_ore": "Infernium Ore"

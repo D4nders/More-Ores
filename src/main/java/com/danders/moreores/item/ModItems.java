@@ -15,6 +15,12 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_INFERNIUM = ITEMS.register("raw_infernium",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> LUMEN_INGOT = ITEMS.register("lumen_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> INFERNIUM_INGOT = ITEMS.register("infernium_ingot",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

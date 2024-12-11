@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lumen_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreores:lumen_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "moreores:lumen_ingot_from_smelting_lumen_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lumen_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreores:lumen_ingot_from_smelting_lumen_ore"
+    ]
+  }
+}
