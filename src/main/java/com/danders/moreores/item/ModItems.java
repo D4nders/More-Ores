@@ -1,7 +1,7 @@
 package com.danders.moreores.item;
 
 import com.danders.moreores.MoreOres;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -20,6 +20,23 @@ public class ModItems {
 
     public static final DeferredItem<Item> INFERNIUM_INGOT = ITEMS.register("infernium_ingot",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<SwordItem> LUMEN_SWORD = ITEMS.register("lumen_sword",
+            () -> new SwordItem(ModToolTiers.LUMEN, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.LUMEN, 5, -2.4f))));
+    public static final DeferredItem<PickaxeItem> LUMEN_PICKAXE = ITEMS.register("lumen_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.LUMEN, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.LUMEN, 1.0f, -2.8f))));
+    public static final DeferredItem<AxeItem> LUMEN_AXE = ITEMS.register("lumen_axe",
+            () -> new AxeItem(ModToolTiers.LUMEN, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.LUMEN, 1.5f, -3.0f))));
+    public static final DeferredItem<ShovelItem> LUMEN_SHOVEL = ITEMS.register("lumen_shovel",
+            () -> new ShovelItem(ModToolTiers.LUMEN, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.LUMEN, 6.0f, -3.2f))));
+    public static final DeferredItem<HoeItem> LUMEN_HOE = ITEMS.register("lumen_hoe",
+            () -> new HoeItem(ModToolTiers.LUMEN, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.LUMEN, 0f, -3.0f))));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

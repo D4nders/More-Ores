@@ -4,6 +4,12 @@
   "item.moreores.lumen_ingot": "Lumen Ingot",
   "item.moreores.infernium_ingot": "Infernium Ingot",
 
+  "item.moreores.lumen_sword": "Lumen Sword",
+  "item.moreores.lumen_pickaxe": "Lumen Pickaxe",
+  "item.moreores.lumen_axe": "Lumen Axe",
+  "item.moreores.lumen_shovel": "Lumen Shovel",
+  "item.moreores.lumen_hoe": "Lumen Hoe",
+
   "block.moreores.lumen_ore": "Lumen Ore",
   "block.moreores.infernium_ore": "Infernium Ore"
 }

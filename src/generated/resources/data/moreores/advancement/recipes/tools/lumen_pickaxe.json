@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lumen_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreores:lumen_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "moreores:lumen_pickaxe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lumen_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreores:lumen_pickaxe"
+    ]
+  }
+}

@@ -1,1 +1,6 @@
-// 1.21.1	2024-12-11T18:50:06.6707338	Tags for minecraft:item mod id moreores
+// 1.21.1	2024-12-12T12:02:24.6579566	Tags for minecraft:item mod id moreores
+17ca45d260d2c3f16c9857a412544ae835accbb8 data/minecraft/tags/item/axes.json
+f52aaaf75fc540ee182c5c4b513a4a3b1fc468cd data/minecraft/tags/item/hoes.json
+130b807764cef1b8e9d80ca77a58b5edfec874f5 data/minecraft/tags/item/pickaxes.json
+1fa3d25899ae7d915d2fde07d354e4a4aac68b26 data/minecraft/tags/item/shovels.json
+a2317b7fc2f46c27cec9782f1a2a2fc7c737d564 data/minecraft/tags/item/swords.json

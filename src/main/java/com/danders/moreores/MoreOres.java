@@ -81,6 +81,14 @@ public class MoreOres
             event.accept(ModBlocks.LUMEN_ORE);
             event.accept(ModBlocks.INFERNIUM_ORE);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.LUMEN_SWORD);
+            event.accept(ModItems.LUMEN_PICKAXE);
+            event.accept(ModItems.LUMEN_AXE);
+            event.accept(ModItems.LUMEN_SHOVEL);
+            event.accept(ModItems.LUMEN_HOE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -6,12 +6,15 @@ import com.danders.moreores.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+
+import static net.minecraft.data.recipes.ShapedRecipeBuilder.shaped;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     public ModRecipeProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
@@ -28,6 +31,47 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput, INFERNIUM_SMELTABLES, RecipeCategory.MISC, ModItems.INFERNIUM_INGOT, 0.25f, 200, "infernium");
         oreBlasting(recipeOutput, INFERNIUM_SMELTABLES, RecipeCategory.MISC, ModItems.INFERNIUM_INGOT, 0.25f, 100, "infernium");
+
+        shaped(RecipeCategory.COMBAT, ModItems.LUMEN_SWORD.get())
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" I ")
+                .define('X', ModItems.LUMEN_INGOT.get())
+                .define('I', Items.STICK)
+                .unlockedBy(getHasName(ModItems.LUMEN_INGOT.get()), has(ModItems.LUMEN_INGOT.get()))
+                .save(recipeOutput);
+        shaped(RecipeCategory.TOOLS, ModItems.LUMEN_PICKAXE.get())
+                .pattern("XXX")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('X', ModItems.LUMEN_INGOT.get())
+                .define('I', Items.STICK)
+                .unlockedBy(getHasName(ModItems.LUMEN_INGOT.get()), has(ModItems.LUMEN_INGOT.get()))
+                .save(recipeOutput);
+        shaped(RecipeCategory.TOOLS, ModItems.LUMEN_AXE.get())
+                .pattern("XX ")
+                .pattern("XI ")
+                .pattern(" I ")
+                .define('X', ModItems.LUMEN_INGOT.get())
+                .define('I', Items.STICK)
+                .unlockedBy(getHasName(ModItems.LUMEN_INGOT.get()), has(ModItems.LUMEN_INGOT.get()))
+                .save(recipeOutput);
+        shaped(RecipeCategory.TOOLS, ModItems.LUMEN_SHOVEL.get())
+                .pattern(" X ")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('X', ModItems.LUMEN_INGOT.get())
+                .define('I', Items.STICK)
+                .unlockedBy(getHasName(ModItems.LUMEN_INGOT.get()), has(ModItems.LUMEN_INGOT.get()))
+                .save(recipeOutput);
+        shaped(RecipeCategory.TOOLS, ModItems.LUMEN_HOE.get())
+                .pattern("XX ")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('X', ModItems.LUMEN_INGOT.get())
+                .define('I', Items.STICK)
+                .unlockedBy(getHasName(ModItems.LUMEN_INGOT.get()), has(ModItems.LUMEN_INGOT.get()))
+                .save(recipeOutput);
     }
 
 

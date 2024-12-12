@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "moreores:lumen_ingot"
+    }
+  },
+  "pattern": [
+    " X ",
+    " I ",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "moreores:lumen_shovel"
+  }
+}
