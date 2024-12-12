@@ -37,6 +37,19 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.LUMEN, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.LUMEN, 0f, -3.0f))));
 
+    public static final DeferredItem<ArmorItem> LUMEN_HELMET = ITEMS.register("lumen_helmet",
+            () -> new ArmorItem(ModArmorMaterials.LUMEN_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
+    public static final DeferredItem<ArmorItem> LUMEN_CHESTPLATE = ITEMS.register("lumen_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.LUMEN_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+    public static final DeferredItem<ArmorItem> LUMEN_LEGGINGS = ITEMS.register("lumen_leggings",
+            () -> new ArmorItem(ModArmorMaterials.LUMEN_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+    public static final DeferredItem<ArmorItem> LUMEN_BOOTS = ITEMS.register("lumen_boots",
+            () -> new ArmorItem(ModArmorMaterials.LUMEN_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -10,6 +10,11 @@
   "item.moreores.lumen_shovel": "Lumen Shovel",
   "item.moreores.lumen_hoe": "Lumen Hoe",
 
+  "item.moreores.lumen_helmet": "Lumen Helmet",
+  "item.moreores.lumen_chestplate": "Lumen Chestplate",
+  "item.moreores.lumen_leggings": "Lumen Leggings",
+  "item.moreores.lumen_boots": "Lumen Boots",
+
   "block.moreores.lumen_ore": "Lumen Ore",
   "block.moreores.infernium_ore": "Infernium Ore"
 }

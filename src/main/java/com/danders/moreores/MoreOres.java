@@ -82,8 +82,16 @@ public class MoreOres
             event.accept(ModBlocks.INFERNIUM_ORE);
         }
 
-        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.LUMEN_SWORD);
+
+            event.accept(ModItems.LUMEN_HELMET);
+            event.accept(ModItems.LUMEN_CHESTPLATE);
+            event.accept(ModItems.LUMEN_LEGGINGS);
+            event.accept(ModItems.LUMEN_BOOTS);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.LUMEN_PICKAXE);
             event.accept(ModItems.LUMEN_AXE);
             event.accept(ModItems.LUMEN_SHOVEL);

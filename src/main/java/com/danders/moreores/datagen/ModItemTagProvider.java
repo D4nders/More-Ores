@@ -29,5 +29,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.LUMEN_SHOVEL.get());
         tag(ItemTags.HOES)
                 .add(ModItems.LUMEN_HOE.get());
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.LUMEN_HELMET.get())
+                .add(ModItems.LUMEN_CHESTPLATE.get())
+                .add(ModItems.LUMEN_LEGGINGS.get())
+                .add(ModItems.LUMEN_BOOTS.get());
     }
 }
