@@ -1,6 +1,7 @@
 package com.danders.moreores.item;
 
 import com.danders.moreores.MoreOres;
+import com.danders.moreores.item.custom.ModArmorItem;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -38,7 +39,7 @@ public class ModItems {
                     .attributes(HoeItem.createAttributes(ModToolTiers.LUMEN, 0f, -3.0f))));
 
     public static final DeferredItem<ArmorItem> LUMEN_HELMET = ITEMS.register("lumen_helmet",
-            () -> new ArmorItem(ModArmorMaterials.LUMEN_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.LUMEN_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
     public static final DeferredItem<ArmorItem> LUMEN_CHESTPLATE = ITEMS.register("lumen_chestplate",
             () -> new ArmorItem(ModArmorMaterials.LUMEN_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
