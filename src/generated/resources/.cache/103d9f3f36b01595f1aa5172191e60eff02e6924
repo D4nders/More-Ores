@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-12T13:13:27.9748292	Registries
+// 1.21.1	2024-12-16T02:10:40.2684557	Registries
 9381b7e0fee45416ace87ec86845b646ff8420e5 data/moreores/neoforge/biome_modifier/add_lumen_ore.json
-3cd711c4b9caf9180ac0683e887e2e7272f6d479 data/moreores/worldgen/configured_feature/lumen_ore.json
-142e1e46fc1a753b80c747d1b4af311faf9d1cd7 data/moreores/worldgen/placed_feature/lumen_ore_placed.json
+c23bd4d95530efbac111848b420def9b3538c4b4 data/moreores/worldgen/configured_feature/lumen_ore.json
+46828e2dbd4d497b6e7f71f90b62eaa0564f0212 data/moreores/worldgen/placed_feature/lumen_ore_placed.json

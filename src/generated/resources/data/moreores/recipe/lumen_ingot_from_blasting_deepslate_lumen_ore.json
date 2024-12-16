@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "lumen",
+  "ingredient": {
+    "item": "moreores:deepslate_lumen_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "moreores:lumen_ingot"
+  }
+}

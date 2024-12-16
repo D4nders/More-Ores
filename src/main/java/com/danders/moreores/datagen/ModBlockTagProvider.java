@@ -20,12 +20,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.LUMEN_ORE.get())
+                .add(ModBlocks.DEEPSLATE_LUMEN_ORE.get())
                 .add(ModBlocks.INFERNIUM_ORE.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.LUMEN_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.DEEPSLATE_LUMEN_ORE.get())
                 .add(ModBlocks.INFERNIUM_ORE.get());
     }
 }

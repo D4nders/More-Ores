@@ -2,6 +2,7 @@ package com.danders.moreores.block;
 
 import com.danders.moreores.MoreOres;
 import com.danders.moreores.item.ModItems;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -9,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -19,15 +21,25 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MoreOres.MODID);
 
     public static final DeferredBlock<Block> LUMEN_ORE = registerBlock("lumen_ore",
-            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .requiresCorrectToolForDrops()
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .strength(5.0F, 6.0F)
                     .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel(state -> 10)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_LUMEN_ORE = registerBlock("deepslate_lumen_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.DEEPSLATE)
+                    .strength(4.5F, 3.0F)
+                    .sound(SoundType.DEEPSLATE)
+                    .requiresCorrectToolForDrops()
                     .lightLevel(state -> 10)));
 
     public static final DeferredBlock<Block> INFERNIUM_ORE = registerBlock("infernium_ore",
-            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
-                    .strength(4f)
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .strength(3.0F, 3.0F)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 

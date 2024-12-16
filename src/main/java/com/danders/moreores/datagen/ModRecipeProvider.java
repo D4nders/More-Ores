@@ -23,7 +23,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        List<ItemLike> LUMEN_SMELTABLES = List.of(ModItems.RAW_LUMEN, ModBlocks.LUMEN_ORE);
+        List<ItemLike> LUMEN_SMELTABLES = List.of(ModItems.RAW_LUMEN, ModBlocks.LUMEN_ORE, ModBlocks.DEEPSLATE_LUMEN_ORE);
         List<ItemLike> INFERNIUM_SMELTABLES = List.of(ModItems.RAW_INFERNIUM, ModBlocks.INFERNIUM_ORE);
 
         oreSmelting(recipeOutput, LUMEN_SMELTABLES, RecipeCategory.MISC, ModItems.LUMEN_INGOT, 0.25f, 200, "lumen");

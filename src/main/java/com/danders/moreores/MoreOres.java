@@ -80,6 +80,8 @@ public class MoreOres
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.LUMEN_ORE);
             event.accept(ModBlocks.INFERNIUM_ORE);
+
+            event.accept(ModBlocks.DEEPSLATE_LUMEN_ORE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {

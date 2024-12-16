@@ -29,6 +29,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.LUMEN_ORE.get(),
                 block -> createOreDrop(ModBlocks.LUMEN_ORE.get(), ModItems.RAW_LUMEN.get()));
 
+        this.add(ModBlocks.DEEPSLATE_LUMEN_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_LUMEN_ORE.get(), ModItems.RAW_LUMEN.get()));
+
         this.add(ModBlocks.INFERNIUM_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.INFERNIUM_ORE.get(), ModItems.RAW_INFERNIUM.get(), 2f, 3f));
     }
