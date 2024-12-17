@@ -3,6 +3,8 @@
     "moreores:lumen_ore",
     "moreores:deepslate_lumen_ore",
     "moreores:infernium_ore",
-    "moreores:deepslate_infernium_ore"
+    "moreores:deepslate_infernium_ore",
+    "moreores:mithril_ore",
+    "moreores:deepslate_mithril_ore"
   ]
 }

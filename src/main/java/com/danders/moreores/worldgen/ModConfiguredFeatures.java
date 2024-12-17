@@ -21,6 +21,7 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LUMEN_ORE_KEY = registerKey("lumen_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_INFERNIUM_ORE_KEY = registerKey("infernium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MITHRIL_ORE_KEY = registerKey("mithril_ore");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -38,8 +39,14 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_INFERNIUM_ORE.get().defaultBlockState())
         );
 
+        List<OreConfiguration.TargetBlockState> overworldMithrilOres = List.of(
+                OreConfiguration.target(stoneReplaceables, ModBlocks.MITHRIL_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_MITHRIL_ORE.get().defaultBlockState())
+        );
+
         register(context, OVERWORLD_LUMEN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldLumenOres, 9));
         register(context, OVERWORLD_INFERNIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldInferniumOres, 10));
+        register(context, OVERWORLD_MITHRIL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldMithrilOres, 5));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

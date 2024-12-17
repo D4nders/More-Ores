@@ -16,10 +16,16 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_INFERNIUM = ITEMS.register("raw_infernium",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> RAW_MITHRIL = ITEMS.register("raw_mithril",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> LUMEN_INGOT = ITEMS.register("lumen_ingot",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> INFERNIUM_INGOT = ITEMS.register("infernium_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<SwordItem> LUMEN_SWORD = ITEMS.register("lumen_sword",

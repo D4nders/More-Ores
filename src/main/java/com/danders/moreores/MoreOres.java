@@ -73,16 +73,20 @@ public class MoreOres
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_LUMEN);
             event.accept(ModItems.RAW_INFERNIUM);
+            event.accept(ModItems.RAW_MITHRIL);
             event.accept(ModItems.LUMEN_INGOT);
             event.accept(ModItems.INFERNIUM_INGOT);
+            event.accept(ModItems.MITHRIL_INGOT);
         }
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.LUMEN_ORE);
             event.accept(ModBlocks.INFERNIUM_ORE);
+            event.accept(ModBlocks.MITHRIL_ORE);
 
             event.accept(ModBlocks.DEEPSLATE_LUMEN_ORE);
             event.accept(ModBlocks.DEEPSLATE_INFERNIUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_MITHRIL_ORE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
