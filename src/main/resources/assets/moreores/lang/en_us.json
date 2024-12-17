@@ -16,6 +16,7 @@
   "item.moreores.lumen_boots": "Lumen Boots",
 
   "block.moreores.lumen_ore": "Lumen Ore",
-  "block.moreores.deepslate_lumen_ore": "Deepslate_Lumen Ore",
-  "block.moreores.infernium_ore": "Infernium Ore"
+  "block.moreores.deepslate_lumen_ore": "Deepslate Lumen Ore",
+  "block.moreores.infernium_ore": "Infernium Ore",
+  "block.moreores.deepslate_infernium_ore": "Deepslate Infernium Ore"
 }

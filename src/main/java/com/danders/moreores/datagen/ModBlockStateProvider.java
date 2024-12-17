@@ -17,6 +17,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.LUMEN_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_LUMEN_ORE);
         blockWithItem(ModBlocks.INFERNIUM_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_INFERNIUM_ORE);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

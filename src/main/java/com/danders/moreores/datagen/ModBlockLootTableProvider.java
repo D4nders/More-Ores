@@ -34,6 +34,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.add(ModBlocks.INFERNIUM_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.INFERNIUM_ORE.get(), ModItems.RAW_INFERNIUM.get(), 2f, 3f));
+
+        this.add(ModBlocks.DEEPSLATE_INFERNIUM_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_INFERNIUM_ORE.get(), ModItems.RAW_INFERNIUM.get(), 2f, 3f));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

@@ -82,6 +82,7 @@ public class MoreOres
             event.accept(ModBlocks.INFERNIUM_ORE);
 
             event.accept(ModBlocks.DEEPSLATE_LUMEN_ORE);
+            event.accept(ModBlocks.DEEPSLATE_INFERNIUM_ORE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {

@@ -1,10 +1,13 @@
-// 1.21.1	2024-12-16T02:08:20.4919805	Block States: moreores
+// 1.21.1	2024-12-17T17:25:30.7716657	Block States: moreores
+7592796dc6491ac34d4c78ec787e07fd254f0df0 assets/moreores/blockstates/deepslate_infernium_ore.json
 728b05b0da7082e22c78f74cf0fc1b78a72be95a assets/moreores/blockstates/deepslate_lumen_ore.json
 88c0d27180be4ad391c2d73c123c66d7d8b5d72c assets/moreores/blockstates/infernium_ore.json
 a19ad48f47ce12533ecf9ab1164d4fcd79569391 assets/moreores/blockstates/lumen_ore.json
+ebde7c4cae9afc89610dd7fd853d5c79b0d64cb4 assets/moreores/models/block/deepslate_infernium_ore.json
 65fa610d541ad9cb6534c2ab519ab288dc2e975a assets/moreores/models/block/deepslate_lumen_ore.json
 e935600c6e0e59a68f871b29d75dc7e940a3f47a assets/moreores/models/block/infernium_ore.json
 98cfbb29f2d124dffd3689ec0f7b65189cf1350c assets/moreores/models/block/lumen_ore.json
+870ecc39b07b295e6965c65de9866afa4ef11ed3 assets/moreores/models/item/deepslate_infernium_ore.json
 3e5fb91636e319425068ee636be219ee263b3450 assets/moreores/models/item/deepslate_lumen_ore.json
 08bde930999ce9c6a75ec4090fae153bede7baad assets/moreores/models/item/infernium_ore.json
 a8573de4c0059a07ea5310ab9f2e0a7334c14167 assets/moreores/models/item/lumen_ore.json

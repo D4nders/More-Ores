@@ -43,6 +43,13 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> DEEPSLATE_INFERNIUM_ORE = registerBlock("deepslate_infernium_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.DEEPSLATE)
+                    .strength(4.5F, 3.0F)
+                    .sound(SoundType.DEEPSLATE)
+                    .requiresCorrectToolForDrops()));
+
     private static  <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
