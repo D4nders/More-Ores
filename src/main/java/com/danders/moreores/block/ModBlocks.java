@@ -64,6 +64,20 @@ public class ModBlocks {
                     .sound(SoundType.DEEPSLATE)
                     .requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> NECROTHITE_ORE = registerBlock("necrothite_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .strength(3.0F, 3.0F)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_NECROTHITE_ORE = registerBlock("deepslate_necrothite_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.DEEPSLATE)
+                    .strength(4.5F, 3.0F)
+                    .sound(SoundType.DEEPSLATE)
+                    .requiresCorrectToolForDrops()));
+
     private static  <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

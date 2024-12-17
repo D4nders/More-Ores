@@ -19,6 +19,9 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_MITHRIL = ITEMS.register("raw_mithril",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> RAW_NECROTHITE = ITEMS.register("raw_necrothite",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> LUMEN_INGOT = ITEMS.register("lumen_ingot",
             () -> new Item(new Item.Properties()));
 
@@ -26,6 +29,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> NECROTHITE_INGOT = ITEMS.register("necrothite_ingot",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<SwordItem> LUMEN_SWORD = ITEMS.register("lumen_sword",

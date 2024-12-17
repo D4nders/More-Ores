@@ -18,6 +18,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> LUMEN_ORE_PLACED_KEY = registerKey("lumen_ore_placed");
     public static final ResourceKey<PlacedFeature> INFERNIUM_ORE_PLACED_KEY = registerKey("infernium_ore_placed");
     public static final ResourceKey<PlacedFeature> MITHRIL_ORE_PLACED_KEY = registerKey("mithril_ore_placed");
+    public static final ResourceKey<PlacedFeature> NECROTHITE_ORE_PLACED_KEY = registerKey("necrothite_ore_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -25,6 +26,7 @@ public class ModPlacedFeatures {
         register(context, LUMEN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_LUMEN_ORE_KEY), ModOrePlacement.commonOrePlacement(20, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.top())));
         register(context, INFERNIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_INFERNIUM_ORE_KEY), ModOrePlacement.commonOrePlacement(15, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(0))));
         register(context, MITHRIL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_MITHRIL_ORE_KEY), ModOrePlacement.commonOrePlacement(10, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-30))));
+        register(context, NECROTHITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_NECROTHITE_ORE_KEY), ModOrePlacement.commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.absolute(-10), VerticalAnchor.absolute(40))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_necrothite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreores:raw_necrothite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "moreores:necrothite_ingot_from_smelting_raw_necrothite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_necrothite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreores:necrothite_ingot_from_smelting_raw_necrothite"
+    ]
+  }
+}

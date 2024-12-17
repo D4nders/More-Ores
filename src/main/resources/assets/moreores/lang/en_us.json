@@ -2,9 +2,11 @@
   "item.moreores.raw_lumen": "Raw Lumen",
   "item.moreores.raw_infernium": "Raw Infernium",
   "item.moreores.raw_mithril": "Raw Mithril",
+  "item.moreores.raw_necrothite": "Raw Necrothite",
   "item.moreores.lumen_ingot": "Lumen Ingot",
   "item.moreores.infernium_ingot": "Infernium Ingot",
   "item.moreores.mithril_ingot": "Mithril Ingot",
+  "item.moreores.necrothite_ingot": "Necrothite Ingot",
 
   "item.moreores.lumen_sword": "Lumen Sword",
   "item.moreores.lumen_pickaxe": "Lumen Pickaxe",
@@ -22,5 +24,7 @@
   "block.moreores.infernium_ore": "Infernium Ore",
   "block.moreores.deepslate_infernium_ore": "Deepslate Infernium Ore",
   "block.moreores.mithril_ore": "Mithril Ore",
-  "block.moreores.deepslate_mithril_ore": "Deepslate Mithril Ore"
+  "block.moreores.deepslate_mithril_ore": "Deepslate Mithril Ore",
+  "block.moreores.necrothite_ore": "Necrothite Ore",
+  "block.moreores.deepslate_necrothite_ore": "Deepslate Necrothite Ore"
 }

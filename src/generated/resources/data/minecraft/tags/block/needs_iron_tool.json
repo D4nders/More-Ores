@@ -2,6 +2,8 @@
   "values": [
     "moreores:deepslate_lumen_ore",
     "moreores:infernium_ore",
-    "moreores:deepslate_infernium_ore"
+    "moreores:deepslate_infernium_ore",
+    "moreores:necrothite_ore",
+    "moreores:deepslate_necrothite_ore"
   ]
 }

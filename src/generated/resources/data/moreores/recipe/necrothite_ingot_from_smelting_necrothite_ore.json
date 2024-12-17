@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "necrothite",
+  "ingredient": {
+    "item": "moreores:necrothite_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "moreores:necrothite_ingot"
+  }
+}

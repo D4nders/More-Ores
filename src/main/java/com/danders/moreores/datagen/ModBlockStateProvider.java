@@ -20,6 +20,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DEEPSLATE_INFERNIUM_ORE);
         blockWithItem(ModBlocks.MITHRIL_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_MITHRIL_ORE);
+        blockWithItem(ModBlocks.NECROTHITE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_NECROTHITE_ORE);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
