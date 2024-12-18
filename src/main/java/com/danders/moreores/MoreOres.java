@@ -1,6 +1,8 @@
 package com.danders.moreores;
 
+import com.danders.moreores.block.ModBlockEntityTypes;
 import com.danders.moreores.block.ModBlocks;
+import com.danders.moreores.block.entity.AlloyFurnaceBlockEntity;
 import com.danders.moreores.item.ModItems;
 import org.slf4j.Logger;
 
@@ -54,6 +56,7 @@ public class MoreOres
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntityTypes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -107,6 +110,10 @@ public class MoreOres
             event.accept(ModItems.LUMEN_AXE);
             event.accept(ModItems.LUMEN_SHOVEL);
             event.accept(ModItems.LUMEN_HOE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModBlocks.ALLOY_FURNACE);
         }
     }
 

@@ -49,6 +49,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.add(ModBlocks.DEEPSLATE_NECROTHITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.DEEPSLATE_NECROTHITE_ORE.get(), ModItems.RAW_NECROTHITE.get()));
+
+        this.dropSelf(ModBlocks.ALLOY_FURNACE.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

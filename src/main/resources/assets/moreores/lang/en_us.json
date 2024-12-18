@@ -26,5 +26,7 @@
   "block.moreores.mithril_ore": "Mithril Ore",
   "block.moreores.deepslate_mithril_ore": "Deepslate Mithril Ore",
   "block.moreores.necrothite_ore": "Necrothite Ore",
-  "block.moreores.deepslate_necrothite_ore": "Deepslate Necrothite Ore"
+  "block.moreores.deepslate_necrothite_ore": "Deepslate Necrothite Ore",
+
+  "block.moreores.alloy_furnace": "Alloy Furnace"
 }

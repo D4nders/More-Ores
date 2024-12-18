@@ -1,14 +1,17 @@
 package com.danders.moreores.block;
 
 import com.danders.moreores.MoreOres;
+import com.danders.moreores.block.custom.AlloyFurnaceBlock;
 import com.danders.moreores.item.ModItems;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.damagesource.DamageEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
@@ -77,6 +80,11 @@ public class ModBlocks {
                     .strength(4.5F, 3.0F)
                     .sound(SoundType.DEEPSLATE)
                     .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> ALLOY_FURNACE = registerBlock("alloy_furnace",
+            () -> new AlloyFurnaceBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .noOcclusion()));
 
     private static  <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
