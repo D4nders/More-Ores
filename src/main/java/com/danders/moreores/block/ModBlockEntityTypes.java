@@ -13,8 +13,9 @@ public class ModBlockEntityTypes {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES =
             DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, MoreOres.MODID);
 
-    public static final Supplier<BlockEntityType<AlloyFurnaceBlockEntity>> ALLOY_BLOCK_ENTITY = BLOCK_ENTITY_TYPES.register("alloy_furnace_entity",
-            () -> BlockEntityType.Builder.of(
+    public static final Supplier<BlockEntityType<AlloyFurnaceBlockEntity>> ALLOY_FURNACE_BLOCK_ENTITY =
+            BLOCK_ENTITY_TYPES.register("alloy_furnace_entity",
+                    () -> BlockEntityType.Builder.of(
                             AlloyFurnaceBlockEntity::new,
                             ModBlocks.ALLOY_FURNACE.get()
                     )
