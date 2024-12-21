@@ -1,4 +1,5 @@
-// 1.21.1	2024-12-17T21:04:44.3850042	Item Models: moreores
+// 1.21.1	2024-12-22T00:41:15.1391091	Item Models: moreores
+a44c59c8d26a448e2ad595148566da5aadbc417e assets/moreores/models/item/inanis_ingot.json
 0628fb644ca70a6e583c73768cf6713ab6891c16 assets/moreores/models/item/infernium_ingot.json
 c1f73935bab08c305a73fea86b8ec9c951bf655c assets/moreores/models/item/lumen_axe.json
 25d8357ff0186f51aa464572ee39f290251ffc6a assets/moreores/models/item/lumen_boots.json
@@ -52,6 +53,7 @@ f53a3419588a6259bc6a1f5b51f436ea56807338 assets/moreores/models/item/lumen_shove
 e2bd548a382777f83452e788a4000268fd7d9b9c assets/moreores/models/item/lumen_sword.json
 2a4057b1a2854aac540c73e1511824a4b2284508 assets/moreores/models/item/mithril_ingot.json
 47d07d983636e118ae6c13e6af69935aadabc91b assets/moreores/models/item/necrothite_ingot.json
+6eec6735a0635acebedc9882457fe251a2819af6 assets/moreores/models/item/raw_inanis.json
 188985395542a6d55e82b9a3c5047aaa3b28eb19 assets/moreores/models/item/raw_infernium.json
 b7d553e355ad8940364a1a33a8b1c70346b3582e assets/moreores/models/item/raw_lumen.json
 dc9ea702f8c1721b53c0f96c49aefd1d488b1c69 assets/moreores/models/item/raw_mithril.json

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nether_infernium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreores:nether_infernium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "moreores:infernium_ingot_from_smelting_nether_infernium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nether_infernium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreores:infernium_ingot_from_smelting_nether_infernium_ore"
+    ]
+  }
+}

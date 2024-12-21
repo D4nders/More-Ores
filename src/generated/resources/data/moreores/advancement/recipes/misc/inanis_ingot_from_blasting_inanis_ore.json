@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_inanis_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreores:inanis_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "moreores:inanis_ingot_from_blasting_inanis_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_inanis_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreores:inanis_ingot_from_blasting_inanis_ore"
+    ]
+  }
+}

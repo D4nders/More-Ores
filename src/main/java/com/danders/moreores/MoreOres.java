@@ -75,10 +75,12 @@ public class MoreOres
             event.accept(ModItems.RAW_INFERNIUM);
             event.accept(ModItems.RAW_MITHRIL);
             event.accept(ModItems.RAW_NECROTHITE);
+            event.accept(ModItems.RAW_INANIS);
             event.accept(ModItems.LUMEN_INGOT);
             event.accept(ModItems.INFERNIUM_INGOT);
             event.accept(ModItems.MITHRIL_INGOT);
             event.accept(ModItems.NECROTHITE_INGOT);
+            event.accept(ModItems.INANIS_INGOT);
         }
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
@@ -91,6 +93,10 @@ public class MoreOres
             event.accept(ModBlocks.DEEPSLATE_INFERNIUM_ORE);
             event.accept(ModBlocks.DEEPSLATE_MITHRIL_ORE);
             event.accept(ModBlocks.DEEPSLATE_NECROTHITE_ORE);
+
+            event.accept(ModBlocks.INANIS_ORE);
+
+            event.accept(ModBlocks.NETHER_INFERNIUM_ORE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {

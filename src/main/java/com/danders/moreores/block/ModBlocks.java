@@ -50,6 +50,13 @@ public class ModBlocks {
                     .sound(SoundType.DEEPSLATE)
                     .requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> NETHER_INFERNIUM_ORE = registerBlock("nether_infernium_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.NETHER)
+                    .strength(4.5F, 3.0F)
+                    .sound(SoundType.NETHERRACK)
+                    .requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> MITHRIL_ORE = registerBlock("mithril_ore",
             () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.STONE)
@@ -76,6 +83,12 @@ public class ModBlocks {
                     .mapColor(MapColor.DEEPSLATE)
                     .strength(4.5F, 3.0F)
                     .sound(SoundType.DEEPSLATE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> INANIS_ORE = registerBlock("inanis_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .strength(4.5F, 3.0F)
                     .requiresCorrectToolForDrops()));
 
     private static  <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

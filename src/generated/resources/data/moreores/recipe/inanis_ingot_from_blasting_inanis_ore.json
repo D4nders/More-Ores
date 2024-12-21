@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "inanis",
+  "ingredient": {
+    "item": "moreores:inanis_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "moreores:inanis_ingot"
+  }
+}

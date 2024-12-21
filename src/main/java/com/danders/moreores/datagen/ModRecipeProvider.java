@@ -24,9 +24,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         List<ItemLike> LUMEN_SMELTABLES = List.of(ModItems.RAW_LUMEN, ModBlocks.LUMEN_ORE, ModBlocks.DEEPSLATE_LUMEN_ORE);
-        List<ItemLike> INFERNIUM_SMELTABLES = List.of(ModItems.RAW_INFERNIUM, ModBlocks.INFERNIUM_ORE, ModBlocks.DEEPSLATE_INFERNIUM_ORE);
+        List<ItemLike> INFERNIUM_SMELTABLES = List.of(ModItems.RAW_INFERNIUM, ModBlocks.INFERNIUM_ORE, ModBlocks.DEEPSLATE_INFERNIUM_ORE, ModBlocks.NETHER_INFERNIUM_ORE);
         List<ItemLike> MITHRIL_SMELTABLES = List.of(ModItems.RAW_MITHRIL, ModBlocks.MITHRIL_ORE, ModBlocks.DEEPSLATE_MITHRIL_ORE);
         List<ItemLike> NECROTHITE_SMELTABLES = List.of(ModItems.RAW_NECROTHITE, ModBlocks.NECROTHITE_ORE, ModBlocks.DEEPSLATE_NECROTHITE_ORE);
+        List<ItemLike> INANIS_SMELTABLES = List.of(ModItems.RAW_INANIS, ModBlocks.INANIS_ORE);
 
         oreSmelting(recipeOutput, LUMEN_SMELTABLES, RecipeCategory.MISC, ModItems.LUMEN_INGOT, 0.25f, 200, "lumen");
         oreBlasting(recipeOutput, LUMEN_SMELTABLES, RecipeCategory.MISC, ModItems.LUMEN_INGOT, 0.25f, 100, "lumen");
@@ -39,6 +40,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput, NECROTHITE_SMELTABLES, RecipeCategory.MISC, ModItems.NECROTHITE_INGOT, 0.25f, 200, "necrothite");
         oreBlasting(recipeOutput, NECROTHITE_SMELTABLES, RecipeCategory.MISC, ModItems.NECROTHITE_INGOT, 0.25f, 100, "necrothite");
+
+        oreSmelting(recipeOutput, INANIS_SMELTABLES, RecipeCategory.MISC, ModItems.INANIS_INGOT, 0.25f, 200, "inanis");
+        oreBlasting(recipeOutput, INANIS_SMELTABLES, RecipeCategory.MISC, ModItems.INANIS_INGOT, 0.25f, 100, "inanis");
 
         shaped(RecipeCategory.COMBAT, ModItems.LUMEN_SWORD.get())
                 .pattern(" X ")

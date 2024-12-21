@@ -8,6 +8,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
@@ -38,6 +39,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.DEEPSLATE_INFERNIUM_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_INFERNIUM_ORE.get(), ModItems.RAW_INFERNIUM.get(), 2f, 3f));
 
+        this.add(ModBlocks.NETHER_INFERNIUM_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_INFERNIUM_ORE.get(), ModItems.RAW_INFERNIUM.get(), 2f, 3f));
+
         this.add(ModBlocks.MITHRIL_ORE.get(),
                 block -> createOreDrop(ModBlocks.MITHRIL_ORE.get(), ModItems.RAW_MITHRIL.get()));
 
@@ -49,6 +53,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.add(ModBlocks.DEEPSLATE_NECROTHITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.DEEPSLATE_NECROTHITE_ORE.get(), ModItems.RAW_NECROTHITE.get()));
+
+        this.add(ModBlocks.INANIS_ORE.get(),
+                block -> createOreDrop(ModBlocks.INANIS_ORE.get(), ModItems.RAW_INANIS.get()));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

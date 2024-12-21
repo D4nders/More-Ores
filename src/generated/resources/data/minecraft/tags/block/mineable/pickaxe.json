@@ -4,9 +4,11 @@
     "moreores:deepslate_lumen_ore",
     "moreores:infernium_ore",
     "moreores:deepslate_infernium_ore",
+    "moreores:nether_infernium_ore",
     "moreores:mithril_ore",
     "moreores:deepslate_mithril_ore",
     "moreores:necrothite_ore",
-    "moreores:deepslate_necrothite_ore"
+    "moreores:deepslate_necrothite_ore",
+    "moreores:inanis_ore"
   ]
 }
