@@ -7,6 +7,10 @@
     "moreores:necrothite_ore",
     "moreores:deepslate_necrothite_ore",
     "moreores:inanis_ore",
-    "moreores:cinderite_ore"
+    "moreores:cinderite_ore",
+    "moreores:ruby_ore",
+    "moreores:deepslate_ruby_ore",
+    "moreores:sapphire_ore",
+    "moreores:deepslate_sapphire_ore"
   ]
 }

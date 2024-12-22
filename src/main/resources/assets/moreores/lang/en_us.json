@@ -12,6 +12,8 @@
   "item.moreores.inanis_ingot": "Inanis Ingot",
   "item.moreores.cinderite_ingot": "Cinderite Ingot",
   "item.moreores.soulium": "Soulium",
+  "item.moreores.ruby": "Ruby",
+  "item.moreores.sapphire": "Sapphire",
 
   "item.moreores.lumen_sword": "Lumen Sword",
   "item.moreores.lumen_pickaxe": "Lumen Pickaxe",
@@ -33,6 +35,10 @@
   "block.moreores.deepslate_mithril_ore": "Deepslate Mithril Ore",
   "block.moreores.necrothite_ore": "Necrothite Ore",
   "block.moreores.deepslate_necrothite_ore": "Deepslate Necrothite Ore",
+  "block.moreores.ruby_ore": "Ruby Ore",
+  "block.moreores.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.moreores.sapphire_ore": "Sapphire Ore",
+  "block.moreores.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
 
   "block.moreores.inanis_ore": "Inanis Ore",
   "block.moreores.soulium_ore": "Soulium Ore",

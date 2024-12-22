@@ -51,6 +51,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.INANIS_INGOT.get());
         basicItem(ModItems.CINDERITE_INGOT.get());
         basicItem(ModItems.SOULIUM.get());
+        basicItem(ModItems.RUBY.get());
+        basicItem(ModItems.SAPPHIRE.get());
 
         handheldItem(ModItems.LUMEN_SWORD);
         handheldItem(ModItems.LUMEN_PICKAXE);
