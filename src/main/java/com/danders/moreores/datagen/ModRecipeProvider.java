@@ -28,6 +28,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> MITHRIL_SMELTABLES = List.of(ModItems.RAW_MITHRIL, ModBlocks.MITHRIL_ORE, ModBlocks.DEEPSLATE_MITHRIL_ORE);
         List<ItemLike> NECROTHITE_SMELTABLES = List.of(ModItems.RAW_NECROTHITE, ModBlocks.NECROTHITE_ORE, ModBlocks.DEEPSLATE_NECROTHITE_ORE);
         List<ItemLike> INANIS_SMELTABLES = List.of(ModItems.RAW_INANIS, ModBlocks.INANIS_ORE);
+        List<ItemLike> SOULIUM_SMELTABLES = List.of(ModBlocks.SOULIUM_ORE);
 
         oreSmelting(recipeOutput, LUMEN_SMELTABLES, RecipeCategory.MISC, ModItems.LUMEN_INGOT, 0.25f, 200, "lumen");
         oreBlasting(recipeOutput, LUMEN_SMELTABLES, RecipeCategory.MISC, ModItems.LUMEN_INGOT, 0.25f, 100, "lumen");
@@ -43,6 +44,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput, INANIS_SMELTABLES, RecipeCategory.MISC, ModItems.INANIS_INGOT, 0.25f, 200, "inanis");
         oreBlasting(recipeOutput, INANIS_SMELTABLES, RecipeCategory.MISC, ModItems.INANIS_INGOT, 0.25f, 100, "inanis");
+
+        oreSmelting(recipeOutput, SOULIUM_SMELTABLES, RecipeCategory.MISC, ModItems.SOULIUM, 0.25f, 200, "soulium");
+        oreBlasting(recipeOutput, SOULIUM_SMELTABLES, RecipeCategory.MISC, ModItems.SOULIUM, 0.25f, 100, "soulium");
 
         shaped(RecipeCategory.COMBAT, ModItems.LUMEN_SWORD.get())
                 .pattern(" X ")

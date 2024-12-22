@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-22T00:41:15.1391091	Item Models: moreores
+// 1.21.1	2024-12-22T17:04:37.3427967	Item Models: moreores
 a44c59c8d26a448e2ad595148566da5aadbc417e assets/moreores/models/item/inanis_ingot.json
 0628fb644ca70a6e583c73768cf6713ab6891c16 assets/moreores/models/item/infernium_ingot.json
 c1f73935bab08c305a73fea86b8ec9c951bf655c assets/moreores/models/item/lumen_axe.json
@@ -58,3 +58,4 @@ e2bd548a382777f83452e788a4000268fd7d9b9c assets/moreores/models/item/lumen_sword
 b7d553e355ad8940364a1a33a8b1c70346b3582e assets/moreores/models/item/raw_lumen.json
 dc9ea702f8c1721b53c0f96c49aefd1d488b1c69 assets/moreores/models/item/raw_mithril.json
 94d59ad0ff985932cfa1d3d51b550bb6b091d141 assets/moreores/models/item/raw_necrothite.json
+7ee22e9be40fa4b9c254f75e6e2f95731f14a29b assets/moreores/models/item/soulium.json

@@ -28,10 +28,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DEEPSLATE_MITHRIL_ORE.get())
                 .add(ModBlocks.NECROTHITE_ORE.get())
                 .add(ModBlocks.DEEPSLATE_NECROTHITE_ORE.get())
-                .add(ModBlocks.INANIS_ORE.get());
+                .add(ModBlocks.INANIS_ORE.get())
+                .add(ModBlocks.SOULIUM_ORE.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.LUMEN_ORE.get());
+                .add(ModBlocks.LUMEN_ORE.get())
+                .add(ModBlocks.SOULIUM_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DEEPSLATE_LUMEN_ORE.get())

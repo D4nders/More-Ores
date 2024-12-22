@@ -81,6 +81,7 @@ public class MoreOres
             event.accept(ModItems.MITHRIL_INGOT);
             event.accept(ModItems.NECROTHITE_INGOT);
             event.accept(ModItems.INANIS_INGOT);
+            event.accept(ModItems.SOULIUM);
         }
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
@@ -97,6 +98,7 @@ public class MoreOres
             event.accept(ModBlocks.INANIS_ORE);
 
             event.accept(ModBlocks.NETHER_INFERNIUM_ORE);
+            event.accept(ModBlocks.SOULIUM_ORE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {

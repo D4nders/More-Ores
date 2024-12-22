@@ -24,6 +24,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.NECROTHITE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_NECROTHITE_ORE);
         blockWithItem(ModBlocks.INANIS_ORE);
+        blockWithItem(ModBlocks.SOULIUM_ORE);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

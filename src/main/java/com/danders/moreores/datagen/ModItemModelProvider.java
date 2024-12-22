@@ -48,6 +48,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.MITHRIL_INGOT.get());
         basicItem(ModItems.NECROTHITE_INGOT.get());
         basicItem(ModItems.INANIS_INGOT.get());
+        basicItem(ModItems.SOULIUM.get());
 
         handheldItem(ModItems.LUMEN_SWORD);
         handheldItem(ModItems.LUMEN_PICKAXE);

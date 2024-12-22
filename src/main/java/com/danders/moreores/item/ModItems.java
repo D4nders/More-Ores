@@ -31,6 +31,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INANIS_INGOT = ITEMS.register("inanis_ingot",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SOULIUM = ITEMS.register("soulium",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<SwordItem> LUMEN_SWORD = ITEMS.register("lumen_sword",
             () -> new SwordItem(ModToolTiers.LUMEN, new Item.Properties()
