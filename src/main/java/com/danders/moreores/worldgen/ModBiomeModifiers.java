@@ -21,6 +21,7 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_NECROTHITE_ORE = registerKey("add_necrothite_ore");
     public static final ResourceKey<BiomeModifier> ADD_INANIS_ORE = registerKey("add_inanis_ore");
     public static final ResourceKey<BiomeModifier> ADD_SOULIUM_ORE = registerKey("add_soulium_ore");
+    public static final ResourceKey<BiomeModifier> ADD_CINDERITE_ORE = registerKey("add_cinderite_ore");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -59,6 +60,11 @@ public class ModBiomeModifiers {
         context.register(ADD_SOULIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 HolderSet.direct(biomes.getOrThrow(Biomes.SOUL_SAND_VALLEY)),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SOULIUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_CINDERITE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.BASALT_DELTAS)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CINDERITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 

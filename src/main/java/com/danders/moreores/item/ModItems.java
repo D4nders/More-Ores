@@ -20,6 +20,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_INANIS = ITEMS.register("raw_inanis",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_CINDERITE = ITEMS.register("raw_cinderite",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> LUMEN_INGOT = ITEMS.register("lumen_ingot",
             () -> new Item(new Item.Properties()));
@@ -30,6 +32,8 @@ public class ModItems {
     public static final DeferredItem<Item> NECROTHITE_INGOT = ITEMS.register("necrothite_ingot",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INANIS_INGOT = ITEMS.register("inanis_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CINDERITE_INGOT = ITEMS.register("cinderite_ingot",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SOULIUM = ITEMS.register("soulium",
             () -> new Item(new Item.Properties()));

@@ -26,11 +26,13 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_NECROTHITE_ORE_KEY = registerKey("necrothite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_INANIS_ORE_KEY = registerKey("inanis_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SOULIUM_ORE_KEY = registerKey("soulium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_CINDERITE_ORE_KEY = registerKey("cinderite_ore");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest netherrackReplaceables = new BlockMatchTest(Blocks.NETHERRACK);
+        RuleTest blackstoneReplaceables = new BlockMatchTest(Blocks.BLACKSTONE);
         RuleTest endstoneReplaceables = new BlockMatchTest(Blocks.END_STONE);
 
         List<OreConfiguration.TargetBlockState> overworldLumenOres = List.of(
@@ -65,6 +67,10 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(netherrackReplaceables, ModBlocks.SOULIUM_ORE.get().defaultBlockState())
         );
 
+        List<OreConfiguration.TargetBlockState> netherCinderiteOres = List.of(
+                OreConfiguration.target(blackstoneReplaceables, ModBlocks.CINDERITE_ORE.get().defaultBlockState())
+        );
+
         register(context, OVERWORLD_LUMEN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldLumenOres, 9));
         register(context, OVERWORLD_INFERNIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldInferniumOres, 10));
         register(context, NETHER_INFERNIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherInferniumOres, 10));
@@ -72,6 +78,7 @@ public class ModConfiguredFeatures {
         register(context, OVERWORLD_NECROTHITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldNecrothiteOres, 9));
         register(context, END_INANIS_ORE_KEY, Feature.ORE, new OreConfiguration(endInanisOres, 9));
         register(context, NETHER_SOULIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherSouliumOres, 10));
+        register(context, NETHER_CINDERITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherCinderiteOres, 15));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

@@ -59,6 +59,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.add(ModBlocks.SOULIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.SOULIUM_ORE.get(), ModItems.SOULIUM.get()));
+
+        this.add(ModBlocks.CINDERITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.CINDERITE_ORE.get(), ModItems.RAW_CINDERITE.get()));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

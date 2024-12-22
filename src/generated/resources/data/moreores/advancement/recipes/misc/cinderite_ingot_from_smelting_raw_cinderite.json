@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_cinderite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreores:raw_cinderite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "moreores:cinderite_ingot_from_smelting_raw_cinderite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_cinderite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreores:cinderite_ingot_from_smelting_raw_cinderite"
+    ]
+  }
+}

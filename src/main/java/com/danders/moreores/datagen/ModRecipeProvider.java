@@ -29,6 +29,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> NECROTHITE_SMELTABLES = List.of(ModItems.RAW_NECROTHITE, ModBlocks.NECROTHITE_ORE, ModBlocks.DEEPSLATE_NECROTHITE_ORE);
         List<ItemLike> INANIS_SMELTABLES = List.of(ModItems.RAW_INANIS, ModBlocks.INANIS_ORE);
         List<ItemLike> SOULIUM_SMELTABLES = List.of(ModBlocks.SOULIUM_ORE);
+        List<ItemLike> CINDERITE_SMELTABLES = List.of(ModItems.RAW_CINDERITE, ModBlocks.CINDERITE_ORE);
 
         oreSmelting(recipeOutput, LUMEN_SMELTABLES, RecipeCategory.MISC, ModItems.LUMEN_INGOT, 0.25f, 200, "lumen");
         oreBlasting(recipeOutput, LUMEN_SMELTABLES, RecipeCategory.MISC, ModItems.LUMEN_INGOT, 0.25f, 100, "lumen");
@@ -47,6 +48,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput, SOULIUM_SMELTABLES, RecipeCategory.MISC, ModItems.SOULIUM, 0.25f, 200, "soulium");
         oreBlasting(recipeOutput, SOULIUM_SMELTABLES, RecipeCategory.MISC, ModItems.SOULIUM, 0.25f, 100, "soulium");
+
+        oreSmelting(recipeOutput, CINDERITE_SMELTABLES, RecipeCategory.MISC, ModItems.CINDERITE_INGOT, 0.25f, 200, "cinderite");
+        oreBlasting(recipeOutput, CINDERITE_SMELTABLES, RecipeCategory.MISC, ModItems.CINDERITE_INGOT, 0.25f, 100, "cinderite");
 
         shaped(RecipeCategory.COMBAT, ModItems.LUMEN_SWORD.get())
                 .pattern(" X ")

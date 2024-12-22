@@ -29,7 +29,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.NECROTHITE_ORE.get())
                 .add(ModBlocks.DEEPSLATE_NECROTHITE_ORE.get())
                 .add(ModBlocks.INANIS_ORE.get())
-                .add(ModBlocks.SOULIUM_ORE.get());
+                .add(ModBlocks.SOULIUM_ORE.get())
+                .add(ModBlocks.CINDERITE_ORE.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.LUMEN_ORE.get())
@@ -42,7 +43,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.NETHER_INFERNIUM_ORE.get())
                 .add(ModBlocks.NECROTHITE_ORE.get())
                 .add(ModBlocks.DEEPSLATE_NECROTHITE_ORE.get())
-                .add(ModBlocks.INANIS_ORE.get());
+                .add(ModBlocks.INANIS_ORE.get())
+                .add(ModBlocks.CINDERITE_ORE.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.MITHRIL_ORE.get())

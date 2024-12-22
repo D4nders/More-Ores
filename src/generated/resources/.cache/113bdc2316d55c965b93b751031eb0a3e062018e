@@ -1,4 +1,5 @@
-// 1.21.1	2024-12-22T16:50:34.1429704	Block States: moreores
+// 1.21.1	2024-12-22T18:26:10.5659163	Block States: moreores
+bdeb81102fca40686a1b79865c7dd9db8de603de assets/moreores/blockstates/cinderite_ore.json
 7592796dc6491ac34d4c78ec787e07fd254f0df0 assets/moreores/blockstates/deepslate_infernium_ore.json
 728b05b0da7082e22c78f74cf0fc1b78a72be95a assets/moreores/blockstates/deepslate_lumen_ore.json
 e89dab15a72a03846589bb486c238346cbc797fc assets/moreores/blockstates/deepslate_mithril_ore.json
@@ -10,6 +11,7 @@ ab5facd19fe64bd256820c74d0d53aef9fd317b9 assets/moreores/blockstates/mithril_ore
 42c2178b3a8512d7f597061ddb55721c888ad3ff assets/moreores/blockstates/necrothite_ore.json
 6f338b29113223b52aefa31758e2e74b4c3d86b5 assets/moreores/blockstates/nether_infernium_ore.json
 e5ce5386029e64471cc802646859edf9b688219d assets/moreores/blockstates/soulium_ore.json
+7c7bdd1a0ee69a57f79c87f944e32f3ad2b149ea assets/moreores/models/block/cinderite_ore.json
 ebde7c4cae9afc89610dd7fd853d5c79b0d64cb4 assets/moreores/models/block/deepslate_infernium_ore.json
 65fa610d541ad9cb6534c2ab519ab288dc2e975a assets/moreores/models/block/deepslate_lumen_ore.json
 40f2ff59d8974c22b42cc9f1f4dbad3494705be7 assets/moreores/models/block/deepslate_mithril_ore.json
@@ -21,6 +23,7 @@ e935600c6e0e59a68f871b29d75dc7e940a3f47a assets/moreores/models/block/infernium_
 e232d9f94b50ce19dbd0881d8930cc9075675b8a assets/moreores/models/block/necrothite_ore.json
 e7a8a95d37f7c5a86ea63f70b87ac4e13dc01216 assets/moreores/models/block/nether_infernium_ore.json
 1c91bf1cf244926d76159f62f20a18e80c2fd7b6 assets/moreores/models/block/soulium_ore.json
+e5f321300d6ddb22791c00194c89ca3391de4ce9 assets/moreores/models/item/cinderite_ore.json
 870ecc39b07b295e6965c65de9866afa4ef11ed3 assets/moreores/models/item/deepslate_infernium_ore.json
 3e5fb91636e319425068ee636be219ee263b3450 assets/moreores/models/item/deepslate_lumen_ore.json
 2891fdac0090a73ef72b17d34a222f9d0c48786e assets/moreores/models/item/deepslate_mithril_ore.json

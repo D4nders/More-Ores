@@ -92,10 +92,17 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> SOULIUM_ORE = registerBlock("soulium_ore",
-            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.NETHER)
                     .strength(4.5F, 3.0F)
                     .sound(SoundType.NETHERRACK)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> CINDERITE_ORE = registerBlock("cinderite_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BLACK)
+                    .strength(4.5F, 3.0F)
+                    .sound(SoundType.GILDED_BLACKSTONE)
                     .requiresCorrectToolForDrops()));
 
     private static  <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
