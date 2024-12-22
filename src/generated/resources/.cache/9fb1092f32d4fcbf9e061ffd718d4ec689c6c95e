@@ -1,4 +1,6 @@
-// 1.21.1	2024-12-22T19:52:30.162302	Recipes
+// 1.21.1	2024-12-23T00:04:27.2848016	Recipes
+465d872b1557829ac823c57a0562c0ae18ddbeb6 data/moreores/advancement/recipes/building_blocks/soul_sand.json
+d5a452d1e667e038f3274c2f4de910d446c9803a data/moreores/advancement/recipes/building_blocks/soul_soil.json
 04192049d94c652831ea589ec668c50afac1dfd6 data/moreores/advancement/recipes/combat/lumen_sword.json
 09ee36a97a518c610b0996d1e1ffe9a13d10ae02 data/moreores/advancement/recipes/misc/cinderite_ingot_from_blasting_cinderite_ore.json
 aa5b8f2092c6c6a715f71ac2bfbc677a1d5cf1b4 data/moreores/advancement/recipes/misc/cinderite_ingot_from_blasting_raw_cinderite.json
@@ -44,6 +46,9 @@ ae84ede3294d0716f5fc038c172c43d9b8587bc3 data/moreores/advancement/recipes/misc/
 e1f6911277d994ebac3b2a575d0ccab854f1f52d data/moreores/advancement/recipes/misc/sapphire_from_smelting_sapphire_ore.json
 f313e49068dc0ac741700856f85f2d483ca96b73 data/moreores/advancement/recipes/misc/soulium_from_blasting_soulium_ore.json
 1a09ac8ceb8d045e74a11d9cf048ed08680d8b2f data/moreores/advancement/recipes/misc/soulium_from_smelting_soulium_ore.json
+f0e6d91269ca1d95b4076873f35c6b8472aa9551 data/moreores/advancement/recipes/misc/soul_campfire.json
+b2659bfcee142ababd22a904ce23ee57e2b67d6c data/moreores/advancement/recipes/misc/soul_lantern.json
+cb422e4f1dbe93e40bb9948f47071e959af2d429 data/moreores/advancement/recipes/misc/soul_torch.json
 4db8a69a084ae7029628c9d80de7916c2ede22a8 data/moreores/advancement/recipes/tools/lumen_axe.json
 2f4f0d6ffd095dbc115b9b262846566f7c65d3bc data/moreores/advancement/recipes/tools/lumen_hoe.json
 8c33c00259d3cd3c58b04f9acbdcbaac8f892b4a data/moreores/advancement/recipes/tools/lumen_pickaxe.json
@@ -97,3 +102,8 @@ de15eb0381184ae313730a6d8305516659c86a18 data/moreores/recipe/sapphire_from_blas
 dced24b203c598b5c5a241d45045c9bc92670121 data/moreores/recipe/sapphire_from_smelting_sapphire_ore.json
 ebc7d014d23b7c66e361e67c7e1c291a9d00c9ee data/moreores/recipe/soulium_from_blasting_soulium_ore.json
 682ef70763ecc78f0a29764a0a04e40a5cecaa59 data/moreores/recipe/soulium_from_smelting_soulium_ore.json
+c333724a0adb7b7206f3c9a37f70d0a6acdab34d data/moreores/recipe/soul_campfire.json
+dd5698bb258b953c0ea957ddf1827c5637476837 data/moreores/recipe/soul_lantern.json
+5d04589fd378a7a525afdcc309b3db2654be4974 data/moreores/recipe/soul_sand.json
+cf7bc447c92a726403f016084844d18e2bd6f131 data/moreores/recipe/soul_soil.json
+49de41c21ae1eb596d8d63e2fd7351c49c277898 data/moreores/recipe/soul_torch.json

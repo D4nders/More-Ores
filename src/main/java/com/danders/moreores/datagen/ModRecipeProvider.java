@@ -6,6 +6,7 @@ import com.danders.moreores.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -100,6 +101,52 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('I', Items.STICK)
                 .unlockedBy(getHasName(ModItems.LUMEN_INGOT.get()), has(ModItems.LUMEN_INGOT.get()))
                 .save(recipeOutput);
+
+        shaped(RecipeCategory.MISC, Items.SOUL_TORCH)
+                .pattern("   ")
+                .pattern(" X ")
+                .pattern(" I ")
+                .define('X', ModItems.SOULIUM.get())
+                .define('I', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SOULIUM.get()), has(ModItems.SOULIUM.get()))
+                .save(recipeOutput, MoreOres.MODID + ":" + "soul_torch");
+
+        shaped(RecipeCategory.MISC, Items.SOUL_LANTERN)
+                .pattern("OOO")
+                .pattern("OXO")
+                .pattern("OOO")
+                .define('X', ModItems.SOULIUM.get())
+                .define('O', Items.IRON_NUGGET)
+                .unlockedBy(getHasName(ModItems.SOULIUM.get()), has(ModItems.SOULIUM.get()))
+                .save(recipeOutput, MoreOres.MODID + ":" + "soul_lantern");
+
+        shaped(RecipeCategory.MISC, Items.SOUL_CAMPFIRE)
+                .pattern(" I ")
+                .pattern("IXI")
+                .pattern("OOO")
+                .define('X', ModItems.SOULIUM.get())
+                .define('I', Items.STICK)
+                .define('O', ItemTags.LOGS)
+                .unlockedBy(getHasName(ModItems.SOULIUM.get()), has(ModItems.SOULIUM.get()))
+                .save(recipeOutput, MoreOres.MODID + ":" + "soul_campfire");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, Items.SOUL_SAND, 8)
+                .pattern("OOO")
+                .pattern("OXO")
+                .pattern("OOO")
+                .define('X', ModItems.SOULIUM.get())
+                .define('O', Items.SAND)
+                .unlockedBy(getHasName(ModItems.SOULIUM.get()), has(ModItems.SOULIUM.get()))
+                .save(recipeOutput, MoreOres.MODID + ":" + "soul_sand");
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, Items.SOUL_SOIL, 8)
+                .pattern("OOO")
+                .pattern("OXO")
+                .pattern("OOO")
+                .define('X', ModItems.SOULIUM.get())
+                .define('O', Items.DIRT)
+                .unlockedBy(getHasName(ModItems.SOULIUM.get()), has(ModItems.SOULIUM.get()))
+                .save(recipeOutput, MoreOres.MODID + ":" + "soul_soil");
     }
 
 

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "tag": "minecraft:logs"
+    },
+    "X": {
+      "item": "moreores:soulium"
+    }
+  },
+  "pattern": [
+    " I ",
+    "IXI",
+    "OOO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:soul_campfire"
+  }
+}

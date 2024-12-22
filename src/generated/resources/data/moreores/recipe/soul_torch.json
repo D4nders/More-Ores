@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "moreores:soulium"
+    }
+  },
+  "pattern": [
+    "   ",
+    " X ",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:soul_torch"
+  }
+}

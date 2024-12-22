@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_soulium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreores:soulium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "moreores:soul_torch"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_soulium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreores:soul_torch"
+    ]
+  }
+}
