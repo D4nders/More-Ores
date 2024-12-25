@@ -38,6 +38,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.DEEPSLATE_INFERNIUM_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_INFERNIUM_ORE.get(), ModItems.RAW_INFERNIUM.get(), 2f, 3f));
 
+        this.add(ModBlocks.NETHER_INFERNIUM_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_INFERNIUM_ORE.get(), ModItems.RAW_INFERNIUM.get(), 2f, 3f));
+
         this.add(ModBlocks.MITHRIL_ORE.get(),
                 block -> createOreDrop(ModBlocks.MITHRIL_ORE.get(), ModItems.RAW_MITHRIL.get()));
 
@@ -49,6 +52,27 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.add(ModBlocks.DEEPSLATE_NECROTHITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.DEEPSLATE_NECROTHITE_ORE.get(), ModItems.RAW_NECROTHITE.get()));
+
+        this.add(ModBlocks.INANIS_ORE.get(),
+                block -> createOreDrop(ModBlocks.INANIS_ORE.get(), ModItems.RAW_INANIS.get()));
+
+        this.add(ModBlocks.SOULIUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.SOULIUM_ORE.get(), ModItems.SOULIUM.get()));
+
+        this.add(ModBlocks.CINDERITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.CINDERITE_ORE.get(), ModItems.RAW_CINDERITE.get()));
+
+        this.add(ModBlocks.RUBY_ORE.get(),
+                block -> createOreDrop(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get()));
+
+        this.add(ModBlocks.DEEPSLATE_RUBY_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModItems.RUBY.get()));
+
+        this.add(ModBlocks.SAPPHIRE_ORE.get(),
+                block -> createOreDrop(ModBlocks.SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get()));
+
+        this.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get()));
 
         this.dropSelf(ModBlocks.ALLOY_FURNACE.get());
     }

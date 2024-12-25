@@ -4,11 +4,16 @@ import com.danders.moreores.block.ModBlockEntityTypes;
 import com.danders.moreores.block.entity.AlloyFurnaceBlockEntity;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
-import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.ContainerHelper;
+import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.MenuProvider;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
@@ -38,44 +43,41 @@ public class AlloyFurnaceBlock extends BaseEntityBlock {
     }
 
     @Override
-    public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
+    public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
         return SHAPE;
     }
 
     @Override
-    public RenderShape getRenderShape(BlockState blockState) {
+    public RenderShape getRenderShape(BlockState state) {
         return RenderShape.MODEL;
     }
 
     @Override
-    public void onRemove(BlockState blockState, Level level, BlockPos blockPos, BlockState newBlockState, boolean isMoving) {
-        if(blockState.getBlock() != newBlockState.getBlock()) {
-            BlockEntity blockEntity = level.getBlockEntity(blockPos);
-            if(blockEntity instanceof AlloyFurnaceBlockEntity) {
-                ((AlloyFurnaceBlockEntity) blockEntity).drops();
+    protected void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean movedByPiston) { // drops all contents of blockentity when removed.
+        if (state.getBlock() != newState.getBlock()) {
+            if (level.getBlockEntity(pos) instanceof AlloyFurnaceBlockEntity alloyFurnaceBlockEntity) {
+                Containers.dropContents(level, pos, alloyFurnaceBlockEntity);
+                level.updateNeighbourForOutputSignal(pos, this);
             }
         }
-        super.onRemove(blockState, level, blockPos, newBlockState, isMoving);
+        super.onRemove(state, level, pos, newState, movedByPiston);
     }
 
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        if (!level.isClientSide && player instanceof ServerPlayer serverPlayer) {
-            MenuProvider menuProvider = getMenuProvider(state, level, pos);
-            if (menuProvider != null) {
-                serverPlayer.openMenu(menuProvider, pos);
-                return InteractionResult.CONSUME;
-            } else {
-                throw new IllegalStateException("Our MenuProvider is missing!");
-            }
-        }
-        return InteractionResult.sidedSuccess(level.isClientSide());
-    }
-
-    @Nullable
     @Override
-    public MenuProvider getMenuProvider(BlockState state, Level level, BlockPos pos) {
-        BlockEntity blockEntity = level.getBlockEntity(pos);
-        return blockEntity instanceof AlloyFurnaceBlockEntity ? (AlloyFurnaceBlockEntity)blockEntity : null;
+    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+        if (level.getBlockEntity(pos) instanceof AlloyFurnaceBlockEntity alloyFurnaceBlockEntity) {
+            if (alloyFurnaceBlockEntity.isEmpty() && !stack.isEmpty()) {
+                alloyFurnaceBlockEntity.setItem(0, stack);
+                stack.shrink(1);
+                level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 2f);
+            } else if (stack.isEmpty()) {
+                ItemStack stackOnFurnace = alloyFurnaceBlockEntity.getItem(0);
+                player.setItemInHand(InteractionHand.MAIN_HAND, stackOnFurnace);
+                alloyFurnaceBlockEntity.clearContent();
+                level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 1f);
+            }
+        }
+        return ItemInteractionResult.SUCCESS;
     }
 
     @Override
@@ -89,6 +91,6 @@ public class AlloyFurnaceBlock extends BaseEntityBlock {
         if(level.isClientSide()) {
             return null;
         }
-        return createTickerHelper(blockEntityType,ModBlockEntityTypes.ALLOY_FURNACE_BLOCK_ENTITY.get(), AlloyFurnaceBlockEntity::tick);
+        return createTickerHelper(blockEntityType,ModBlockEntityTypes.ALLOY_FURNACE_BE.get(), AlloyFurnaceBlockEntity::tick);
     }
 }
