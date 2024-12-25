@@ -1,17 +1,9 @@
-// 1.21.1	2024-12-22T19:52:30.1422639	Loot Tables
-f4732958bdb65156554c68704526e824ea1bd8e8 data/moreores/loot_table/blocks/cinderite_ore.json
+// 1.21.1	2024-12-17T21:04:44.3835004	Loot Tables
 60ebe363fc8732cca2875ce0e155e26da635af0f data/moreores/loot_table/blocks/deepslate_infernium_ore.json
 032392f038c1273ecb9be6ef63d10cd4c41d34ff data/moreores/loot_table/blocks/deepslate_lumen_ore.json
 d8831bc74cdbf12d7a9410a420844513fbeda3ef data/moreores/loot_table/blocks/deepslate_mithril_ore.json
 3f755b379b48416087a2a0a60e4815ef128e95e4 data/moreores/loot_table/blocks/deepslate_necrothite_ore.json
-12fb4e8cbd4a8794362c4f5ec6eb80a6e5947c44 data/moreores/loot_table/blocks/deepslate_ruby_ore.json
-2f2b8518f5515e53f4a3128e76537f6c7733a6d1 data/moreores/loot_table/blocks/deepslate_sapphire_ore.json
-8638e7da0041f10c5b37563d9999a7bf38e7f438 data/moreores/loot_table/blocks/inanis_ore.json
 c7c0084fb45a98424050cb162b198854674d63cd data/moreores/loot_table/blocks/infernium_ore.json
 92edd79f5f4dcd2081baadec4e7117fd68c21a63 data/moreores/loot_table/blocks/lumen_ore.json
 1c82e346334f858474eb8dceb529b94a2013d6cc data/moreores/loot_table/blocks/mithril_ore.json
 209ca32776820ab0c946b67c8e7a5568a3103acd data/moreores/loot_table/blocks/necrothite_ore.json
-6651b8da5ca330caba6bea732781deb31cf72506 data/moreores/loot_table/blocks/nether_infernium_ore.json
-ec3139c2f4bc6b52cf3cb06debf4fbf4c64804c5 data/moreores/loot_table/blocks/ruby_ore.json
-f337ebaa6f371a66a37b40beff66f2766d3f97eb data/moreores/loot_table/blocks/sapphire_ore.json
-6919e9321211d0d3e6b240ab5b2bef4507d395c5 data/moreores/loot_table/blocks/soulium_ore.json
