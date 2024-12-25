@@ -4,6 +4,9 @@ import com.danders.moreores.block.ModBlockEntityTypes;
 import com.danders.moreores.block.ModBlocks;
 import com.danders.moreores.block.entity.AlloyFurnaceBlockEntity;
 import com.danders.moreores.item.ModItems;
+import com.danders.moreores.screen.ModMenuTypes;
+import com.danders.moreores.screen.custom.AlloyFurnaceScreen;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -57,6 +60,7 @@ public class MoreOres
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModBlockEntityTypes.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -149,6 +153,10 @@ public class MoreOres
         public static void onClientSetup(FMLClientSetupEvent event)
         {
 
+        }
+
+        public static void registerScreens(RegisterMenuScreensEvent event) {
+            event.register(ModMenuTypes.ALLOY_FURNACE_MENU.get(), AlloyFurnaceScreen::new);
         }
     }
 }
