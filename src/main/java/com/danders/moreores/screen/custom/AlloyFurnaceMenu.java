@@ -30,7 +30,7 @@ public class AlloyFurnaceMenu extends AbstractContainerMenu {
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        this.addSlot(new SlotItemHandler(this.blockEntity.inventory, 0, 45, 16));
+        this.addSlot(new SlotItemHandler(this.blockEntity.inventory, 0, 45, 17));
     }
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons

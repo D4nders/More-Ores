@@ -62,6 +62,7 @@ public class MoreOres
         ModBlockEntityTypes.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 
+        NeoForge.EVENT_BUS.register(this);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -155,6 +156,7 @@ public class MoreOres
 
         }
 
+        @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenuTypes.ALLOY_FURNACE_MENU.get(), AlloyFurnaceScreen::new);
         }
