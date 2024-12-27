@@ -3,6 +3,9 @@ package com.danders.moreores.block.entity;
 import com.danders.moreores.block.ModBlockEntityTypes;
 import com.danders.moreores.block.custom.AlloyFurnaceBlock;
 import com.danders.moreores.item.ModItems;
+import com.danders.moreores.recipe.AlloySmeltingRecipe;
+import com.danders.moreores.recipe.AlloySmeltingRecipeInput;
+import com.danders.moreores.recipe.ModRecipes;
 import com.danders.moreores.screen.custom.AlloyFurnaceMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
@@ -19,11 +22,14 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider {
 
@@ -150,7 +156,8 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
     }
 
     private void smeltItem() {
-        ItemStack output = new ItemStack(ModItems.NECROTHITE_INGOT.get());
+        Optional<RecipeHolder<AlloySmeltingRecipe>> recipe = getCurrentRecipe();
+        ItemStack output = recipe.get().value().getResultItem(null);
 
         itemHandler.extractItem(SLOT_INPUT_1, 1, false);
         itemHandler.extractItem(SLOT_INPUT_2, 1, false);
@@ -171,11 +178,19 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
     }
 
     private boolean hasRecipe() {
-        ItemStack input_1 = new ItemStack(ModItems.MITHRIL_INGOT.get());
-        ItemStack input_2 = new ItemStack(ModItems.INFERNIUM_INGOT.get());
-        ItemStack output = new ItemStack(ModItems.NECROTHITE_INGOT.get());
+        Optional<RecipeHolder<AlloySmeltingRecipe>> recipe = getCurrentRecipe();
 
-        return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output) && !itemHandler.getStackInSlot(SLOT_INPUT_1).isEmpty() && !itemHandler.getStackInSlot(SLOT_INPUT_2).isEmpty() && itemHandler.getStackInSlot(SLOT_INPUT_1).getItem() != itemHandler.getStackInSlot(SLOT_INPUT_2).getItem();
+        if (recipe.isEmpty()) {
+            return false;
+        }
+
+        ItemStack output = recipe.get().value().getResultItem(null);
+
+        return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+    }
+
+    private Optional<RecipeHolder<AlloySmeltingRecipe>> getCurrentRecipe() {
+        return this.level.getRecipeManager().getRecipeFor(ModRecipes.ALLOY_FURNACE_TYPE.get(), new AlloySmeltingRecipeInput(itemHandler.getStackInSlot(SLOT_INPUT_1), itemHandler.getStackInSlot(SLOT_INPUT_2)), level);
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {

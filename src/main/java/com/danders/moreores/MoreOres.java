@@ -4,6 +4,7 @@ import com.danders.moreores.block.ModBlockEntityTypes;
 import com.danders.moreores.block.ModBlocks;
 import com.danders.moreores.block.entity.AlloyFurnaceBlockEntity;
 import com.danders.moreores.item.ModItems;
+import com.danders.moreores.recipe.ModRecipes;
 import com.danders.moreores.screen.ModMenuTypes;
 import com.danders.moreores.screen.custom.AlloyFurnaceScreen;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
@@ -61,6 +62,7 @@ public class MoreOres
         ModBlocks.register(modEventBus);
         ModBlockEntityTypes.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         // Register the item to a creative tab

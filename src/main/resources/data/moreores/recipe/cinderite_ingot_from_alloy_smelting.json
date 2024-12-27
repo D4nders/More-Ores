@@ -1,0 +1,14 @@
+{
+  "type": "moreores:alloy_smelting",
+  "ingredient": [
+    {
+      "item": "moreores:lumen_ingot"
+    },
+    {
+      "item": "moreores:necrothite_ingot"
+    }
+  ],
+  "result": {
+    "id": "moreores:cinderite_ingot"
+  }
+}
