@@ -1,6 +1,7 @@
 package com.danders.moreores.block.entity;
 
 import com.danders.moreores.block.ModBlockEntityTypes;
+import com.danders.moreores.block.custom.AlloyFurnaceBlock;
 import com.danders.moreores.item.ModItems;
 import com.danders.moreores.screen.custom.AlloyFurnaceMenu;
 import net.minecraft.core.BlockPos;
@@ -130,6 +131,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
     public void tick(Level level, BlockPos pos, BlockState state) {
         if(hasRecipe() && isOutputSlotEmptyOrReceivable()) {
             increaseSmeltingProgress();
+            level.setBlockAndUpdate(pos, state.setValue(AlloyFurnaceBlock.LIT, true));
             setChanged(level, pos, state);
 
             if(hasSmeltingFinished()) {
@@ -138,6 +140,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
             }
         } else {
             resetProgress();
+            level.setBlockAndUpdate(pos, state.setValue(AlloyFurnaceBlock.LIT, false));
         }
     }
 
