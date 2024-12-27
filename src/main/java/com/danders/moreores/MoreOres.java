@@ -1,7 +1,13 @@
 package com.danders.moreores;
 
+import com.danders.moreores.block.ModBlockEntityTypes;
 import com.danders.moreores.block.ModBlocks;
+import com.danders.moreores.block.entity.AlloyFurnaceBlockEntity;
 import com.danders.moreores.item.ModItems;
+import com.danders.moreores.recipe.ModRecipes;
+import com.danders.moreores.screen.ModMenuTypes;
+import com.danders.moreores.screen.custom.AlloyFurnaceScreen;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -54,7 +60,11 @@ public class MoreOres
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntityTypes.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
+        NeoForge.EVENT_BUS.register(this);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -125,6 +135,10 @@ public class MoreOres
             event.accept(ModItems.LUMEN_SHOVEL);
             event.accept(ModItems.LUMEN_HOE);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModBlocks.ALLOY_FURNACE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -142,6 +156,11 @@ public class MoreOres
         public static void onClientSetup(FMLClientSetupEvent event)
         {
 
+        }
+
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event) {
+            event.register(ModMenuTypes.ALLOY_FURNACE_MENU.get(), AlloyFurnaceScreen::new);
         }
     }
 }

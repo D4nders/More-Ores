@@ -1,4 +1,5 @@
-// 1.21.1	2024-12-22T19:52:30.1422639	Loot Tables
+// 1.21.1	2024-12-25T18:20:24.421101	Loot Tables
+b9a7bbd83bd0765a7c1da3545b26784b63381ac8 data/moreores/loot_table/blocks/alloy_furnace.json
 f4732958bdb65156554c68704526e824ea1bd8e8 data/moreores/loot_table/blocks/cinderite_ore.json
 60ebe363fc8732cca2875ce0e155e26da635af0f data/moreores/loot_table/blocks/deepslate_infernium_ore.json
 032392f038c1273ecb9be6ef63d10cd4c41d34ff data/moreores/loot_table/blocks/deepslate_lumen_ore.json

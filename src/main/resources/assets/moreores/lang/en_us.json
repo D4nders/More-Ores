@@ -42,5 +42,7 @@
 
   "block.moreores.inanis_ore": "Inanis Ore",
   "block.moreores.soulium_ore": "Soulium Ore",
-  "block.moreores.cinderite_ore": "Cinderite Ore"
+  "block.moreores.cinderite_ore": "Cinderite Ore",
+
+  "block.moreores.alloy_furnace": "Alloy Furnace"
 }

@@ -1,6 +1,7 @@
 package com.danders.moreores.block;
 
 import com.danders.moreores.MoreOres;
+import com.danders.moreores.block.custom.AlloyFurnaceBlock;
 import com.danders.moreores.item.ModItems;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -131,6 +132,11 @@ public class ModBlocks {
                     .mapColor(MapColor.DEEPSLATE)
                     .strength(4.5F, 3.0F)
                     .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> ALLOY_FURNACE = registerBlock("alloy_furnace",
+            () -> new AlloyFurnaceBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .noOcclusion()));
 
     private static  <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
