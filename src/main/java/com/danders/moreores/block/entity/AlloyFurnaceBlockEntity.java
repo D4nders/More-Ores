@@ -28,11 +28,6 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements MenuProvider
 
     public final ItemStackHandler itemHandler = new ItemStackHandler(4) {
         @Override
-        protected int getStackLimit(int slot, ItemStack stack) {
-            return 1;
-        }
-
-        @Override
         protected void onContentsChanged(int slot) {
             setChanged();
             if (!level.isClientSide()) {

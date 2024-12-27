@@ -4,6 +4,7 @@ import com.danders.moreores.block.ModBlocks;
 import com.danders.moreores.block.entity.AlloyFurnaceBlockEntity;
 import com.danders.moreores.screen.ModMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
@@ -50,12 +51,13 @@ public class AlloyFurnaceMenu extends AbstractContainerMenu {
         return maxProgress != 0 && progress != 0 ? progress * arrowPixelSize / maxProgress : 0;
     }
 
-    public int getScaledSmeltingProgress() {
+    public int getScaledLitProgress() {
         int progress = this.data.get(0);
         int maxProgress = this.data.get(1);
-        int crystalPixelSize = 14;
+        int firePixelSize = 14;
 
-        return maxProgress != 0 && progress != 0 ? progress * crystalPixelSize / maxProgress : 0;
+        return maxProgress != 0 && progress != 0 ? progress * firePixelSize / maxProgress : 0;
+        //return Mth.clamp((float)this.data.get(0) / (float)i, 0.0F, 1.0F); furnace
     }
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons

@@ -52,7 +52,7 @@ public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceMenu
 
     private void renderProgressFire(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isSmelting()) {
-            guiGraphics.blit(SMELTING_TEXTURE, x + 56, y + 36 + 14 - menu.getScaledSmeltingProgress(), 0, 14 - menu.getScaledSmeltingProgress(), 14, menu.getScaledSmeltingProgress(),14, 14);
+            guiGraphics.blit(SMELTING_TEXTURE, x + 56, y + 36 + 14 - menu.getScaledLitProgress(), 0, 14 - menu.getScaledLitProgress(), 14, menu.getScaledLitProgress(),14, 14);
         }
     }
 
