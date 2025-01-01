@@ -41,6 +41,14 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SAPPHIRE = ITEMS.register("sapphire",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ADAMANTIUM_INGOT = ITEMS.register("adamantium_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> AETHERIUM_INGOT = ITEMS.register("aetherium_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> VALORIUM_INGOT = ITEMS.register("valorium_ingot",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<SwordItem> LUMEN_SWORD = ITEMS.register("lumen_sword",
             () -> new SwordItem(ModToolTiers.LUMEN, new Item.Properties()

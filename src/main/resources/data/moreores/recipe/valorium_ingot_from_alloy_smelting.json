@@ -1,0 +1,14 @@
+{
+  "type": "moreores:alloy_smelting",
+  "ingredient": [
+    {
+      "item": "moreores:mithril_ingot"
+    },
+    {
+      "item": "moreores:adamantium_ingot"
+    }
+  ],
+  "result": {
+    "id": "moreores:valorium_ingot"
+  }
+}

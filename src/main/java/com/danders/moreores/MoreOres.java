@@ -96,6 +96,10 @@ public class MoreOres
             event.accept(ModItems.SOULIUM);
             event.accept(ModItems.RUBY);
             event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.STEEL_INGOT);
+            event.accept(ModItems.AETHERIUM_INGOT);
+            event.accept(ModItems.VALORIUM_INGOT);
+            event.accept(ModItems.ADAMANTIUM_INGOT);
         }
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
