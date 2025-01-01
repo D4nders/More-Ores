@@ -20,7 +20,7 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
                     .put(ModArmorMaterials.LUMEN_ARMOR_MATERIAL,
-                            List.of(new MobEffectInstance(MobEffects.NIGHT_VISION, 1000, 1, false, false)))
+                            List.of(new MobEffectInstance(MobEffects.NIGHT_VISION, 240, 3, false, false)))
                     .build();
 
     public ModArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
@@ -48,11 +48,17 @@ public class ModArmorItem extends ArmorItem {
     private void addEffectToPlayer(Player player, List<MobEffectInstance> mapEffect) {
         boolean hasPlayerEffect = mapEffect.stream().allMatch(effect -> player.hasEffect(effect.getEffect()));
 
+        for (MobEffectInstance effect : mapEffect) {
+            player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), effect.isAmbient(), effect.isVisible()));
+        }
+
+        /*
         if(!hasPlayerEffect) {
             for (MobEffectInstance effect : mapEffect) {
                 player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), effect.isAmbient(), effect.isVisible()));
             }
         }
+         */
     }
 
     private boolean hasPlayerCorrectArmorOn(Holder<ArmorMaterial> mapArmorMaterial, Player player) {
