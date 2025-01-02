@@ -7,6 +7,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Inventory;
 
 public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceMenu> {
@@ -14,7 +15,7 @@ public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceMenu
             ResourceLocation.fromNamespaceAndPath(MoreOres.MODID, "textures/gui/alloy_furnace/alloy_furnace_gui.png");
     private static final ResourceLocation ARROW_TEXTURE =
             ResourceLocation.parse("textures/gui/sprites/container/furnace/burn_progress.png");
-    private static final ResourceLocation SMELTING_TEXTURE =
+    private static final ResourceLocation FIRE_TEXTURE =
             ResourceLocation.parse("textures/gui/sprites/container/furnace/lit_progress.png");
 
     public AlloyFurnaceScreen(AlloyFurnaceMenu menu, Inventory playerInventory, Component title) {
@@ -46,13 +47,15 @@ public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceMenu
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isSmelting()) {
-            guiGraphics.blit(ARROW_TEXTURE,x + 79, y + 34, 0, 0, menu.getScaledArrowProgress(), 16, 24, 16);
+            int arrowWidth = Mth.ceil(menu.getBurnProgress() * 24.0F);
+            guiGraphics.blit(ARROW_TEXTURE, x + 79, y + 34, 0, 0, arrowWidth, 16, 24, 16);
         }
     }
 
     private void renderProgressFire(GuiGraphics guiGraphics, int x, int y) {
-        if(menu.isSmelting()) {
-            guiGraphics.blit(SMELTING_TEXTURE, x + 56, y + 36 + 14 - menu.getScaledLitProgress(), 0, 14 - menu.getScaledLitProgress(), 14, menu.getScaledLitProgress(),14, 14);
+        int fireHeight = Mth.ceil(menu.getLitProgress() * 13.0F) + 1; // Scale to max 14 pixels
+        if (fireHeight > 0) {
+            guiGraphics.blit(FIRE_TEXTURE, x + 56, y + 36 + 14 - fireHeight, 0, 14 - fireHeight, 14, fireHeight, 14, 14); // Your original placement
         }
     }
 

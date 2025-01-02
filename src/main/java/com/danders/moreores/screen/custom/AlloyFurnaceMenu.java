@@ -19,7 +19,7 @@ public class AlloyFurnaceMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     public AlloyFurnaceMenu(int containerId , Inventory inv, FriendlyByteBuf extraData) {
-        this(containerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
+        this(containerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(4));
     }
 
     public AlloyFurnaceMenu(int containerId, Inventory inv, BlockEntity blockEntity, ContainerData data) {
@@ -43,21 +43,20 @@ public class AlloyFurnaceMenu extends AbstractContainerMenu {
         return data.get(0) > 0;
     }
 
-    public int getScaledArrowProgress() {
-        int progress = this.data.get(0);
-        int maxProgress = this.data.get(1);
-        int arrowPixelSize = 24;
+    public float getBurnProgress() {
+        int cookingProgress = this.data.get(0);
+        int cookingTotalTime = this.data.get(1);
 
-        return maxProgress != 0 && progress != 0 ? progress * arrowPixelSize / maxProgress : 0;
+        return cookingTotalTime != 0 && cookingProgress != 0 ? (float) cookingProgress / (float) cookingTotalTime : 0.0F;
     }
 
-    public int getScaledLitProgress() {
-        int progress = this.data.get(0);
-        int maxProgress = this.data.get(1);
-        int firePixelSize = 14;
+    public float getLitProgress() {
+        int litDuration = this.data.get(3);
+        if (litDuration == 0) {
+            litDuration = 200; // Default to 200 if litDuration is 0
+        }
 
-        return maxProgress != 0 && progress != 0 ? progress * firePixelSize / maxProgress : 0;
-        //return Mth.clamp((float)this.data.get(0) / (float)i, 0.0F, 1.0F); furnace
+        return (float) this.data.get(2) / (float) litDuration; // litTime / litDuration
     }
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
