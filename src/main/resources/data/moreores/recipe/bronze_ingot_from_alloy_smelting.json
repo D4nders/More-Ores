@@ -1,0 +1,14 @@
+{
+  "type": "moreores:alloy_smelting",
+  "ingredient": [
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "moreores:tin_ingot"
+    }
+  ],
+  "result": {
+    "id": "moreores:bronze_ingot"
+  }
+}

@@ -22,6 +22,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_CINDERITE = ITEMS.register("raw_cinderite",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_SILVER = ITEMS.register("raw_silver",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_TIN = ITEMS.register("raw_tin",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> LUMEN_INGOT = ITEMS.register("lumen_ingot",
             () -> new Item(new Item.Properties()));
@@ -48,6 +52,14 @@ public class ModItems {
     public static final DeferredItem<Item> AETHERIUM_INGOT = ITEMS.register("aetherium_ingot",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> VALORIUM_INGOT = ITEMS.register("valorium_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TIN_INGOT = ITEMS.register("tin_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SOARSTONE = ITEMS.register("soarstone",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<SwordItem> LUMEN_SWORD = ITEMS.register("lumen_sword",

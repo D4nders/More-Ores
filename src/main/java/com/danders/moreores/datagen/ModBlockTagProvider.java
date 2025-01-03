@@ -29,12 +29,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.NECROTHITE_ORE.get())
                 .add(ModBlocks.DEEPSLATE_NECROTHITE_ORE.get())
                 .add(ModBlocks.INANIS_ORE.get())
+                .add(ModBlocks.SOARSTONE_ORE.get())
                 .add(ModBlocks.SOULIUM_ORE.get())
                 .add(ModBlocks.CINDERITE_ORE.get())
                 .add(ModBlocks.RUBY_ORE.get())
                 .add(ModBlocks.DEEPSLATE_RUBY_ORE.get())
                 .add(ModBlocks.SAPPHIRE_ORE.get())
-                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get())
+                .add(ModBlocks.SILVER_ORE.get())
+                .add(ModBlocks.DEEPSLATE_SILVER_ORE.get())
+                .add(ModBlocks.TIN_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TIN_ORE.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.LUMEN_ORE.get())
@@ -48,11 +53,16 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.NECROTHITE_ORE.get())
                 .add(ModBlocks.DEEPSLATE_NECROTHITE_ORE.get())
                 .add(ModBlocks.INANIS_ORE.get())
+                .add(ModBlocks.SOARSTONE_ORE.get())
                 .add(ModBlocks.CINDERITE_ORE.get())
                 .add(ModBlocks.RUBY_ORE.get())
                 .add(ModBlocks.DEEPSLATE_RUBY_ORE.get())
                 .add(ModBlocks.SAPPHIRE_ORE.get())
-                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get())
+                .add(ModBlocks.SILVER_ORE.get())
+                .add(ModBlocks.DEEPSLATE_SILVER_ORE.get())
+                .add(ModBlocks.TIN_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TIN_ORE.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.MITHRIL_ORE.get())

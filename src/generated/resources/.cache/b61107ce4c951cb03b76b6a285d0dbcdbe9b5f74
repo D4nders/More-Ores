@@ -1,5 +1,5 @@
-// 1.21.1	2024-12-25T18:20:24.4281013	Tags for minecraft:block mod id moreores
-5a81c0b396647c5112b4933ae58136839c1dc9c9 data/minecraft/tags/block/mineable/pickaxe.json
+// 1.21.1	2025-01-03T23:04:18.2335599	Tags for minecraft:block mod id moreores
+6e8f4a1d6c11233c95f410dc0f88e65ca0f66ff8 data/minecraft/tags/block/mineable/pickaxe.json
 3aaa7666bba01219a77a34301e12112d7788d09a data/minecraft/tags/block/needs_diamond_tool.json
-573bd65d01c220a78d11eb74cabe41c08e17769b data/minecraft/tags/block/needs_iron_tool.json
+003e74c042bcbd9a622d2503b1f8918e756f0169 data/minecraft/tags/block/needs_iron_tool.json
 373ed0379406ddfb536a68f7ff3c48aefc753061 data/minecraft/tags/block/needs_stone_tool.json

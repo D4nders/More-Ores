@@ -93,6 +93,12 @@ public class ModBlocks {
                     .strength(4.5F, 3.0F)
                     .requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> SOARSTONE_ORE = registerBlock("soarstone_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .strength(4.5F, 3.0F)
+                    .requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> SOULIUM_ORE = registerBlock("soulium_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
                     .mapColor(MapColor.NETHER)
@@ -129,6 +135,32 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.ofLegacyCopy(SAPPHIRE_ORE.get())
+                    .mapColor(MapColor.DEEPSLATE)
+                    .strength(4.5F, 3.0F)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> SILVER_ORE = registerBlock("silver_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.ofLegacyCopy(SILVER_ORE.get())
+                    .mapColor(MapColor.DEEPSLATE)
+                    .strength(4.5F, 3.0F)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> TIN_ORE = registerBlock("tin_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.ofLegacyCopy(TIN_ORE.get())
                     .mapColor(MapColor.DEEPSLATE)
                     .strength(4.5F, 3.0F)
                     .sound(SoundType.DEEPSLATE)));

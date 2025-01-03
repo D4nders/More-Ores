@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_soarstone_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moreores:soarstone_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "moreores:soarstone_from_smelting_soarstone_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_soarstone_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moreores:soarstone_from_smelting_soarstone_ore"
+    ]
+  }
+}

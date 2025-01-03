@@ -24,12 +24,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.NECROTHITE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_NECROTHITE_ORE);
         blockWithItem(ModBlocks.INANIS_ORE);
+        blockWithItem(ModBlocks.SOARSTONE_ORE);
         blockWithItem(ModBlocks.SOULIUM_ORE);
         blockWithItem(ModBlocks.CINDERITE_ORE);
         blockWithItem(ModBlocks.RUBY_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_RUBY_ORE);
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+        blockWithItem(ModBlocks.SILVER_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_SILVER_ORE);
+        blockWithItem(ModBlocks.TIN_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_TIN_ORE);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

@@ -25,10 +25,13 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MITHRIL_ORE_KEY = registerKey("mithril_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_NECROTHITE_ORE_KEY = registerKey("necrothite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_INANIS_ORE_KEY = registerKey("inanis_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_SOARSTONE_ORE_KEY = registerKey("soarstone_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SOULIUM_ORE_KEY = registerKey("soulium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_CINDERITE_ORE_KEY = registerKey("cinderite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RUBY_ORE_KEY = registerKey("ruby_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILVER_ORE_KEY = registerKey("silver_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_TIN_ORE_KEY = registerKey("tin_ore");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -65,6 +68,10 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(endstoneReplaceables, ModBlocks.INANIS_ORE.get().defaultBlockState())
         );
 
+        List<OreConfiguration.TargetBlockState> endSoarstoneOres = List.of(
+                OreConfiguration.target(endstoneReplaceables, ModBlocks.SOARSTONE_ORE.get().defaultBlockState())
+        );
+
         List<OreConfiguration.TargetBlockState> netherSouliumOres = List.of(
                 OreConfiguration.target(netherrackReplaceables, ModBlocks.SOULIUM_ORE.get().defaultBlockState())
         );
@@ -75,12 +82,22 @@ public class ModConfiguredFeatures {
 
         List<OreConfiguration.TargetBlockState> overworldRubyOres = List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.RUBY_ORE.get().defaultBlockState()),
-                OreConfiguration.target(stoneReplaceables, ModBlocks.DEEPSLATE_RUBY_ORE.get().defaultBlockState())
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_RUBY_ORE.get().defaultBlockState())
         );
 
         List<OreConfiguration.TargetBlockState> overworldSapphireOres = List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.SAPPHIRE_ORE.get().defaultBlockState()),
-                OreConfiguration.target(stoneReplaceables, ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get().defaultBlockState())
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get().defaultBlockState())
+        );
+
+        List<OreConfiguration.TargetBlockState> overworldSilverOres = List.of(
+                OreConfiguration.target(stoneReplaceables, ModBlocks.SILVER_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_SILVER_ORE.get().defaultBlockState())
+        );
+
+        List<OreConfiguration.TargetBlockState> overworldTinOres = List.of(
+                OreConfiguration.target(stoneReplaceables, ModBlocks.TIN_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_TIN_ORE.get().defaultBlockState())
         );
 
         register(context, OVERWORLD_LUMEN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldLumenOres, 9));
@@ -89,10 +106,13 @@ public class ModConfiguredFeatures {
         register(context, OVERWORLD_MITHRIL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldMithrilOres, 5));
         register(context, OVERWORLD_NECROTHITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldNecrothiteOres, 9));
         register(context, END_INANIS_ORE_KEY, Feature.ORE, new OreConfiguration(endInanisOres, 9));
+        register(context, END_SOARSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(endSoarstoneOres, 5));
         register(context, NETHER_SOULIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherSouliumOres, 10));
         register(context, NETHER_CINDERITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherCinderiteOres, 15));
         register(context, OVERWORLD_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(overworldRubyOres, 4));
         register(context, OVERWORLD_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres, 4));
+        register(context, OVERWORLD_SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSilverOres, 9));
+        register(context, OVERWORLD_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTinOres, 12));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

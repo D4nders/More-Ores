@@ -56,6 +56,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.INANIS_ORE.get(),
                 block -> createOreDrop(ModBlocks.INANIS_ORE.get(), ModItems.RAW_INANIS.get()));
 
+        this.add(ModBlocks.SOARSTONE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.SOARSTONE_ORE.get(), ModItems.SOARSTONE.get(), 2.0F, 5.0F));
+
         this.add(ModBlocks.SOULIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.SOULIUM_ORE.get(), ModItems.SOULIUM.get()));
 
@@ -73,6 +76,18 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
                 block -> createOreDrop(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get()));
+
+        this.add(ModBlocks.SILVER_ORE.get(),
+                block -> createOreDrop(ModBlocks.SILVER_ORE.get(), ModItems.RAW_SILVER.get()));
+
+        this.add(ModBlocks.DEEPSLATE_SILVER_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_SILVER_ORE.get(), ModItems.RAW_SILVER.get()));
+
+        this.add(ModBlocks.TIN_ORE.get(),
+                block -> createOreDrop(ModBlocks.TIN_ORE.get(), ModItems.RAW_TIN.get()));
+
+        this.add(ModBlocks.DEEPSLATE_TIN_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_TIN_ORE.get(), ModItems.RAW_TIN.get()));
 
         this.dropSelf(ModBlocks.ALLOY_FURNACE.get());
     }

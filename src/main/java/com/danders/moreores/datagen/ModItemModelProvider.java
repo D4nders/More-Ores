@@ -49,6 +49,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.MITHRIL_INGOT.get());
         basicItem(ModItems.NECROTHITE_INGOT.get());
         basicItem(ModItems.INANIS_INGOT.get());
+        basicItem(ModItems.SOARSTONE.get());
         basicItem(ModItems.CINDERITE_INGOT.get());
         basicItem(ModItems.SOULIUM.get());
         basicItem(ModItems.RUBY.get());
@@ -57,6 +58,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ADAMANTIUM_INGOT.get());
         basicItem(ModItems.AETHERIUM_INGOT.get());
         basicItem(ModItems.VALORIUM_INGOT.get());
+        basicItem(ModItems.BRONZE_INGOT.get());
+        basicItem(ModItems.SILVER_INGOT.get());
+        basicItem(ModItems.TIN_INGOT.get());
 
         handheldItem(ModItems.LUMEN_SWORD);
         handheldItem(ModItems.LUMEN_PICKAXE);

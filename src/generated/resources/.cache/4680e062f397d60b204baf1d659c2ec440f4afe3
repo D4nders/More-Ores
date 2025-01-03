@@ -1,6 +1,7 @@
-// 1.21.1	2025-01-01T21:24:10.1113826	Item Models: moreores
+// 1.21.1	2025-01-03T23:32:50.1384604	Item Models: moreores
 872b25ae86175b7c9c7ffc227a74ba6be0d7826f assets/moreores/models/item/adamantium_ingot.json
 a492df8114c018692dfd6c5eff0d82db96a68d60 assets/moreores/models/item/aetherium_ingot.json
+4e6b75cd0f289a79bd4038111e420fe5672c0ec3 assets/moreores/models/item/bronze_ingot.json
 88d247253d365dbfec8d201abe8e4a73cd556f42 assets/moreores/models/item/cinderite_ingot.json
 a44c59c8d26a448e2ad595148566da5aadbc417e assets/moreores/models/item/inanis_ingot.json
 0628fb644ca70a6e583c73768cf6713ab6891c16 assets/moreores/models/item/infernium_ingot.json
@@ -64,6 +65,9 @@ dc9ea702f8c1721b53c0f96c49aefd1d488b1c69 assets/moreores/models/item/raw_mithril
 94d59ad0ff985932cfa1d3d51b550bb6b091d141 assets/moreores/models/item/raw_necrothite.json
 f287b25e2c107a549281c1178f5d76a805504a98 assets/moreores/models/item/ruby.json
 4590b446d91920b032957919e10ecd22e4629d21 assets/moreores/models/item/sapphire.json
+218fe4096b6de3c7f90128ec95241e6a394ebbd9 assets/moreores/models/item/silver_ingot.json
+f2536efaef1b314ffab953e72cb74a049a3f1570 assets/moreores/models/item/soarstone.json
 7ee22e9be40fa4b9c254f75e6e2f95731f14a29b assets/moreores/models/item/soulium.json
 183aa69b79126ae85793ebe310d5d4193d227a5a assets/moreores/models/item/steel_ingot.json
+59a60055abd1bb8c0fbc70e28cc1455b0cd697ea assets/moreores/models/item/tin_ingot.json
 7dc68f80621ddc314c7cd89cd2c9ee98d1572ab8 assets/moreores/models/item/valorium_ingot.json
