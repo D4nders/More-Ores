@@ -1,6 +1,8 @@
 {
   "values": [
     "moreores:mithril_ore",
-    "moreores:deepslate_mithril_ore"
+    "moreores:deepslate_mithril_ore",
+    "moreores:adamantium_ore",
+    "moreores:deepslate_adamantium_ore"
   ]
 }

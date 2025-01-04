@@ -87,6 +87,7 @@ public class MoreOres
             event.accept(ModItems.RAW_NECROTHITE);
             event.accept(ModItems.RAW_INANIS);
             event.accept(ModItems.RAW_CINDERITE);
+            event.accept(ModItems.RAW_ADAMANTIUM);
             event.accept(ModItems.LUMEN_INGOT);
             event.accept(ModItems.INFERNIUM_INGOT);
             event.accept(ModItems.MITHRIL_INGOT);
@@ -115,6 +116,7 @@ public class MoreOres
             event.accept(ModBlocks.SAPPHIRE_ORE);
             event.accept(ModBlocks.TIN_ORE);
             event.accept(ModBlocks.SILVER_ORE);
+            event.accept(ModBlocks.ADAMANTIUM_ORE);
 
             event.accept(ModBlocks.DEEPSLATE_LUMEN_ORE);
             event.accept(ModBlocks.DEEPSLATE_INFERNIUM_ORE);
@@ -124,6 +126,7 @@ public class MoreOres
             event.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
             event.accept(ModBlocks.DEEPSLATE_TIN_ORE);
             event.accept(ModBlocks.DEEPSLATE_SILVER_ORE);
+            event.accept(ModBlocks.DEEPSLATE_ADAMANTIUM_ORE);
 
             event.accept(ModBlocks.INANIS_ORE);
             event.accept(ModBlocks.SOARSTONE_ORE);

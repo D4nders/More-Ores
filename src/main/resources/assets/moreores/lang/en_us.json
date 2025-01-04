@@ -5,6 +5,9 @@
   "item.moreores.raw_necrothite": "Raw Necrothite",
   "item.moreores.raw_inanis": "Raw Inanis",
   "item.moreores.raw_cinderite": "Raw Cinderite",
+  "item.moreores.raw_adamantium": "Raw Adamantium",
+  "item.moreores.raw_tin": "Raw Tin",
+  "item.moreores.raw_silver": "Raw Silver",
   "item.moreores.lumen_ingot": "Lumen Ingot",
   "item.moreores.infernium_ingot": "Infernium Ingot",
   "item.moreores.mithril_ingot": "Mithril Ingot",
@@ -51,6 +54,8 @@
   "block.moreores.deepslate_silver_ore": "Deepslate Silver Ore",
   "block.moreores.tin_ore": "Tin Ore",
   "block.moreores.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.moreores.adamantium_ore": "Adamantium Ore",
+  "block.moreores.deepslate_adamantium_ore": "Deepslate Adamantium Ore",
 
   "block.moreores.soarstone_ore": "Soarstone Ore",
   "block.moreores.inanis_ore": "Inanis Ore",

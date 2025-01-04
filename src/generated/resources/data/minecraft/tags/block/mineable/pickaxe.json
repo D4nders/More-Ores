@@ -20,6 +20,8 @@
     "moreores:silver_ore",
     "moreores:deepslate_silver_ore",
     "moreores:tin_ore",
-    "moreores:deepslate_tin_ore"
+    "moreores:deepslate_tin_ore",
+    "moreores:adamantium_ore",
+    "moreores:deepslate_adamantium_ore"
   ]
 }

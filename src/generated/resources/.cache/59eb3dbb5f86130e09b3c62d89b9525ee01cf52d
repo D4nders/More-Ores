@@ -1,6 +1,8 @@
-// 1.21.1	2025-01-03T23:04:18.2215084	Loot Tables
+// 1.21.1	2025-01-04T01:26:23.0733468	Loot Tables
+16a57803a47080b9968a574231566d40e411ac48 data/moreores/loot_table/blocks/adamantium_ore.json
 b9a7bbd83bd0765a7c1da3545b26784b63381ac8 data/moreores/loot_table/blocks/alloy_furnace.json
 f4732958bdb65156554c68704526e824ea1bd8e8 data/moreores/loot_table/blocks/cinderite_ore.json
+3d92281cbaaa16eaae5ca67527903eff728954c6 data/moreores/loot_table/blocks/deepslate_adamantium_ore.json
 60ebe363fc8732cca2875ce0e155e26da635af0f data/moreores/loot_table/blocks/deepslate_infernium_ore.json
 032392f038c1273ecb9be6ef63d10cd4c41d34ff data/moreores/loot_table/blocks/deepslate_lumen_ore.json
 d8831bc74cdbf12d7a9410a420844513fbeda3ef data/moreores/loot_table/blocks/deepslate_mithril_ore.json

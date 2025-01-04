@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-03T23:32:50.1384604	Item Models: moreores
+// 1.21.1	2025-01-04T01:26:23.0758517	Item Models: moreores
 872b25ae86175b7c9c7ffc227a74ba6be0d7826f assets/moreores/models/item/adamantium_ingot.json
 a492df8114c018692dfd6c5eff0d82db96a68d60 assets/moreores/models/item/aetherium_ingot.json
 4e6b75cd0f289a79bd4038111e420fe5672c0ec3 assets/moreores/models/item/bronze_ingot.json
@@ -57,6 +57,7 @@ f53a3419588a6259bc6a1f5b51f436ea56807338 assets/moreores/models/item/lumen_shove
 e2bd548a382777f83452e788a4000268fd7d9b9c assets/moreores/models/item/lumen_sword.json
 2a4057b1a2854aac540c73e1511824a4b2284508 assets/moreores/models/item/mithril_ingot.json
 47d07d983636e118ae6c13e6af69935aadabc91b assets/moreores/models/item/necrothite_ingot.json
+b49b8e4b272b116d73f8e69923bf4d113073bcfd assets/moreores/models/item/raw_adamantium.json
 daa99fb772e03a724ce58be6b3c5c268a24287ce assets/moreores/models/item/raw_cinderite.json
 6eec6735a0635acebedc9882457fe251a2819af6 assets/moreores/models/item/raw_inanis.json
 188985395542a6d55e82b9a3c5047aaa3b28eb19 assets/moreores/models/item/raw_infernium.json

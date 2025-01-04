@@ -89,6 +89,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.DEEPSLATE_TIN_ORE.get(),
                 block -> createOreDrop(ModBlocks.DEEPSLATE_TIN_ORE.get(), ModItems.RAW_TIN.get()));
 
+        this.add(ModBlocks.ADAMANTIUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.ADAMANTIUM_ORE.get(), ModItems.RAW_ADAMANTIUM.get()));
+
+        this.add(ModBlocks.DEEPSLATE_ADAMANTIUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_ADAMANTIUM_ORE.get(), ModItems.RAW_ADAMANTIUM.get()));
+
         this.dropSelf(ModBlocks.ALLOY_FURNACE.get());
     }
 

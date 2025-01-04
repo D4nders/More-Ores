@@ -26,6 +26,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_TIN = ITEMS.register("raw_tin",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_ADAMANTIUM = ITEMS.register("raw_adamantium",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> LUMEN_INGOT = ITEMS.register("lumen_ingot",
             () -> new Item(new Item.Properties()));

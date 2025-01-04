@@ -36,6 +36,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModBlocks.SAPPHIRE_ORE, ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
         List<ItemLike> SILVER_SMELTABLES = List.of(ModBlocks.SILVER_ORE, ModBlocks.DEEPSLATE_SILVER_ORE, ModItems.RAW_SILVER);
         List<ItemLike> TIN_SMELTABLES = List.of(ModBlocks.TIN_ORE, ModBlocks.DEEPSLATE_TIN_ORE, ModItems.RAW_TIN);
+        List<ItemLike> ADAMANTIUM_SMELTABLES = List.of(ModBlocks.ADAMANTIUM_ORE, ModBlocks.DEEPSLATE_ADAMANTIUM_ORE, ModItems.RAW_ADAMANTIUM);
 
         oreSmelting(recipeOutput, LUMEN_SMELTABLES, RecipeCategory.MISC, ModItems.LUMEN_INGOT, 0.25f, 200, "lumen");
         oreBlasting(recipeOutput, LUMEN_SMELTABLES, RecipeCategory.MISC, ModItems.LUMEN_INGOT, 0.25f, 100, "lumen");
@@ -72,6 +73,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput, TIN_SMELTABLES, RecipeCategory.MISC, ModItems.TIN_INGOT, 0.25f, 200, "tin");
         oreBlasting(recipeOutput, TIN_SMELTABLES, RecipeCategory.MISC, ModItems.TIN_INGOT, 0.25f, 100, "tin");
+
+        oreSmelting(recipeOutput, ADAMANTIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ADAMANTIUM_INGOT, 0.25f, 200, "adamantium");
+        oreBlasting(recipeOutput, ADAMANTIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ADAMANTIUM_INGOT, 0.25f, 100, "adamantium");
 
         shaped(RecipeCategory.COMBAT, ModItems.LUMEN_SWORD.get())
                 .pattern(" X ")

@@ -32,6 +32,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILVER_ORE_KEY = registerKey("silver_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_TIN_ORE_KEY = registerKey("tin_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ADAMANTIUM_ORE_KEY = registerKey("adamantium_ore");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -100,6 +101,11 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_TIN_ORE.get().defaultBlockState())
         );
 
+        List<OreConfiguration.TargetBlockState> overworldAdamantiumOres = List.of(
+                OreConfiguration.target(stoneReplaceables, ModBlocks.ADAMANTIUM_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_ADAMANTIUM_ORE.get().defaultBlockState())
+        );
+
         register(context, OVERWORLD_LUMEN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldLumenOres, 9));
         register(context, OVERWORLD_INFERNIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldInferniumOres, 10));
         register(context, NETHER_INFERNIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherInferniumOres, 10));
@@ -113,6 +119,7 @@ public class ModConfiguredFeatures {
         register(context, OVERWORLD_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres, 4));
         register(context, OVERWORLD_SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSilverOres, 9));
         register(context, OVERWORLD_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTinOres, 12));
+        register(context, OVERWORLD_ADAMANTIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAdamantiumOres, 4));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

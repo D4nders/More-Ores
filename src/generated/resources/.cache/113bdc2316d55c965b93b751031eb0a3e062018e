@@ -1,5 +1,7 @@
-// 1.21.1	2025-01-03T23:04:18.2235139	Block States: moreores
+// 1.21.1	2025-01-04T01:26:23.0788619	Block States: moreores
+e2e88b2ab70eafb97114b6b39e860d336a06202f assets/moreores/blockstates/adamantium_ore.json
 bdeb81102fca40686a1b79865c7dd9db8de603de assets/moreores/blockstates/cinderite_ore.json
+7924ed1727f9c7b6594c2480b25486a7097875cf assets/moreores/blockstates/deepslate_adamantium_ore.json
 7592796dc6491ac34d4c78ec787e07fd254f0df0 assets/moreores/blockstates/deepslate_infernium_ore.json
 728b05b0da7082e22c78f74cf0fc1b78a72be95a assets/moreores/blockstates/deepslate_lumen_ore.json
 e89dab15a72a03846589bb486c238346cbc797fc assets/moreores/blockstates/deepslate_mithril_ore.json
@@ -20,7 +22,9 @@ f412806a0c598ff42c7f6e0b0c89172b8469f4db assets/moreores/blockstates/silver_ore.
 bf79856b4eb5b3bd849aeddc8384333f9faa3e42 assets/moreores/blockstates/soarstone_ore.json
 e5ce5386029e64471cc802646859edf9b688219d assets/moreores/blockstates/soulium_ore.json
 78f0492f14d344de5d505ca5972aced7338af82b assets/moreores/blockstates/tin_ore.json
+984fad59df019f6eb6eaa0918c41663bbd279ee4 assets/moreores/models/block/adamantium_ore.json
 7c7bdd1a0ee69a57f79c87f944e32f3ad2b149ea assets/moreores/models/block/cinderite_ore.json
+8edd151ea0b46c0cf4a434cea044af0783d5b743 assets/moreores/models/block/deepslate_adamantium_ore.json
 ebde7c4cae9afc89610dd7fd853d5c79b0d64cb4 assets/moreores/models/block/deepslate_infernium_ore.json
 65fa610d541ad9cb6534c2ab519ab288dc2e975a assets/moreores/models/block/deepslate_lumen_ore.json
 40f2ff59d8974c22b42cc9f1f4dbad3494705be7 assets/moreores/models/block/deepslate_mithril_ore.json
@@ -41,7 +45,9 @@ cef375addbc32b7be3266e7c4ae3d32e077daafe assets/moreores/models/block/sapphire_o
 1332ff4b1c75ba16a198081ac64d35a24ed6d1d4 assets/moreores/models/block/soarstone_ore.json
 1c91bf1cf244926d76159f62f20a18e80c2fd7b6 assets/moreores/models/block/soulium_ore.json
 e436bd155abed940d0b683ed97a843533fcb9076 assets/moreores/models/block/tin_ore.json
+ad50a5f1343a4c07a1f9d323adeb3ad44c5dfdca assets/moreores/models/item/adamantium_ore.json
 e5f321300d6ddb22791c00194c89ca3391de4ce9 assets/moreores/models/item/cinderite_ore.json
+7f3a06b0c874e4e2528eef6cb1ef3fbc17d168e9 assets/moreores/models/item/deepslate_adamantium_ore.json
 870ecc39b07b295e6965c65de9866afa4ef11ed3 assets/moreores/models/item/deepslate_infernium_ore.json
 3e5fb91636e319425068ee636be219ee263b3450 assets/moreores/models/item/deepslate_lumen_ore.json
 2891fdac0090a73ef72b17d34a222f9d0c48786e assets/moreores/models/item/deepslate_mithril_ore.json

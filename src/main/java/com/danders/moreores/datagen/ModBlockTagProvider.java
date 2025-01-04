@@ -39,7 +39,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.SILVER_ORE.get())
                 .add(ModBlocks.DEEPSLATE_SILVER_ORE.get())
                 .add(ModBlocks.TIN_ORE.get())
-                .add(ModBlocks.DEEPSLATE_TIN_ORE.get());
+                .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
+                .add(ModBlocks.ADAMANTIUM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_ADAMANTIUM_ORE.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.LUMEN_ORE.get())
@@ -66,6 +68,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.MITHRIL_ORE.get())
-                .add(ModBlocks.DEEPSLATE_MITHRIL_ORE.get());
+                .add(ModBlocks.DEEPSLATE_MITHRIL_ORE.get())
+                .add(ModBlocks.ADAMANTIUM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_ADAMANTIUM_ORE.get());
     }
 }
